@@ -1,0 +1,2863 @@
+2016-06-19 03:32:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacionpreguntas could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacionpreguntas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/evaluacionpreguntas/add
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-19 03:34:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacionpreguntas could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacionpreguntas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/evaluacionpreguntas/add
+Referer URL: http://localhost/pruebaonline/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-19 03:34:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacion_preguntas could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacion_preguntas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/evaluacion_preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-19 03:35:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacionpreguntas could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacionpreguntas',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/evaluacionpreguntas/add
+Referer URL: http://localhost/pruebaonline/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-06-23 03:15:12 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\pruebaonline\src\Controller\CategoriasController.php, line 59]
+Request URL: /pruebaonline/categorias/add
+Referer URL: http://localhost/pruebaonline/categorias/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+array_push - [internal], line ??
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-06-23 03:15:12 Warning: Warning (2): array_push() expects parameter 1 to be array, null given in [C:\xampp\htdocs\pruebaonline\src\Controller\CategoriasController.php, line 59]
+Request URL: /pruebaonline/categorias/add
+Referer URL: http://localhost/pruebaonline/categorias/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+array_push - [internal], line ??
+App\Controller\CategoriasController::add() - APP/Controller\CategoriasController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-06-23 03:15:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nombre' cannot be null
+Request URL: /pruebaonline/categorias/add
+Referer URL: http://localhost/pruebaonline/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Table.php(1545): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Table.php(1461): Cake\ORM\Table->_insert(Object(App\Model\Entity\Evaluacion), Array)
+#7 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluacion), Object(ArrayObject))
+#8 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Table.php(1393): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\pruebaonline\src\Controller\CategoriasController.php(66): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluacion))
+#11 [internal function]: App\Controller\CategoriasController->add()
+#12 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#15 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-07-05 02:11:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/select2.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 02:12:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/select2.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 02:53:46 Error: [Error] Call to a member function newEntity() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 02:55:29 Error: [Error] Call to a member function patchEntity() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 02:59:10 Error: [Error] Call to a member function patchEntity() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:01:06 Error: [Error] Call to a member function newEntity() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:05:27 Error: [Error] Call to a member function save() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:06:58 Error: [Error] Call to undefined method App\Model\Entity\Evaluacion::save()
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:20:41 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Eva...', 'App')
+#5 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(91): Cake\Core\App::className('Evaluacions', 'Controller', 'Controller')
+#6 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#8 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Event\EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Event\EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#12 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-05 03:29:39 Error: [Error] Call to undefined method App\Controller\EvaluacionsController::patchEntity()
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:30:02 Error: [Error] Call to undefined method App\Controller\EvaluacionsController::patchEntity()
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:30:36 Error: [Error] Call to undefined method App\Controller\EvaluacionsController::patchEntity()
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 03:40:17 Error: [Error] Call to a member function newEntity() on null
+Request URL: /pruebaonline/evaluacions/add
+Referer URL: http://localhost/pruebaonline/evaluacions/add
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionsController->add()
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#4 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-05 04:51:56 Error: [InvalidArgumentException] Respuestas is not associated with Tipos
+Request URL: /pruebaonline/respuestas
+Referer URL: http://localhost/pruebaonline/preguntas
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(251): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\RespuestasTable), 'Tipos', Array, Array)
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\RespuestasTable))
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\RespuestasTable))
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\RespuestasTable), true)
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Connection.php(218): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Query.php(921): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\ORM\Query.php(871): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\RespuestasTable), Array)
+#14 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\RespuestasTable))
+#15 [internal function]: App\Controller\RespuestasController->index()
+#16 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#19 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-07-05 04:53:59 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline/respuestas/add
+Referer URL: http://localhost/pruebaonline/preguntas
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 04:55:20 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline/respuestas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 04:55:23 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline/respuestas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 04:56:19 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline/respuestas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 04:56:49 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline/respuestas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 17:03:14 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Component\FlashComponent.php, line 31]
+Request URL: /pruebaonline/evaluacions/add
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 97
+[main] - [internal], line ??
+
+
+
+2016-07-05 17:27:38 Error: [ParseError] syntax error, unexpected '=', expecting ']'
+Request URL: /pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PreguntasController))
+#5 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-05 17:27:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:28:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:28:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:28:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:29:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:29:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:32:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:32:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:34:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:37:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:45:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:46:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:46:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline/css/material.min.css
+Referer URL: http://localhost/pruebaonline/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-05 17:53:18 Error: [Cake\Core\Exception\MissingPluginException] Plugin BootstrapUi could not be found.
+Exception Attributes: array (
+  'plugin' => 'BootstrapUi',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\config\bootstrap.php(223): Cake\Core\Plugin::load('BootstrapUi')
+#1 C:\xampp\htdocs\pruebaonline\webroot\index.php(27): require('C:\\xampp\\htdocs...')
+#2 {main}
+
+
+2016-07-05 17:56:09 Error: Fatal Error (1): Class 'BootstrapUI\View\UIView' not found in [C:\xampp\htdocs\pruebaonline\src\View\AppView.php, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 97
+[main] - [internal], line ??
+
+
+
+2016-07-05 17:56:09 Error: [Cake\Error\FatalErrorException] Class 'BootstrapUI\View\UIView' not found
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(97): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Bootstra...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-05 17:56:37 Error: Fatal Error (1): Class 'BootstrapUI\View\UIView' not found in [C:\xampp\htdocs\pruebaonline\src\View\AppView.php, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 97
+[main] - [internal], line ??
+
+
+
+2016-07-05 17:56:38 Error: [Cake\Error\FatalErrorException] Class 'BootstrapUI\View\UIView' not found
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(97): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Bootstra...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-05 17:57:21 Error: Fatal Error (1): Trait 'BootstrapUI\View\UIViewTrait' not found in [C:\xampp\htdocs\pruebaonline\src\View\AppView.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 97
+[main] - [internal], line ??
+
+
+
+2016-07-06 01:13:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nombre' cannot be null
+Request URL: /pruebaonline2/categorias/add
+Referer URL: http://localhost/pruebaonline2/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1545): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1461): Cake\ORM\Table->_insert(Object(App\Model\Entity\Evaluacion), Array)
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluacion), Object(ArrayObject))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1393): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\pruebaonline2\src\Controller\CategoriasController.php(71): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluacion))
+#11 [internal function]: App\Controller\CategoriasController->add()
+#12 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#15 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-07-06 01:15:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nombre' cannot be null
+Request URL: /pruebaonline2/categorias/add
+Referer URL: http://localhost/pruebaonline2/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1545): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1461): Cake\ORM\Table->_insert(Object(App\Model\Entity\Evaluacion), Array)
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluacion), Object(ArrayObject))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1393): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\pruebaonline2\src\Controller\CategoriasController.php(71): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluacion))
+#11 [internal function]: App\Controller\CategoriasController->add()
+#12 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#15 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-07-06 01:16:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'nombre' cannot be null
+Request URL: /pruebaonline2/categorias/add
+Referer URL: http://localhost/pruebaonline2/categorias/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1545): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1461): Cake\ORM\Table->_insert(Object(App\Model\Entity\Evaluacion), Array)
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluacion), Object(ArrayObject))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1393): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\pruebaonline2\src\Controller\CategoriasController.php(71): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluacion))
+#11 [internal function]: App\Controller\CategoriasController->add()
+#12 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CategoriasController))
+#15 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-07-06 01:16:24 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline2/respuestas/add
+Referer URL: http://localhost/pruebaonline2/preguntas
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 02:28:36 Error: [ParseError] syntax error, unexpected ']', expecting ',' or ')'
+Request URL: /pruebaonline2/evaluacions/view/3
+Referer URL: http://localhost/pruebaonline2/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 03:05:38 Error: [ParseError] syntax error, unexpected ')'
+Request URL: /pruebaonline2/evaluacions/view/3
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Eva...', 'App')
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(91): Cake\Core\App::className('Evaluacions', 'Controller', 'Controller')
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#12 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-06 03:42:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Error\Debugger.php:746) in [C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionsController.php, line 68]
+Request URL: /pruebaonline2/evaluacions/view/3
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+header - [internal], line ??
+App\Controller\EvaluacionsController::view() - APP/Controller\EvaluacionsController.php, line 68
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 03:44:40 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Error\Debugger.php:746) in [C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionsController.php, line 67]
+Request URL: /pruebaonline2/evaluacions/view/3
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+header - [internal], line ??
+App\Controller\EvaluacionsController::view() - APP/Controller\EvaluacionsController.php, line 67
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:20:35 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-06 04:21:03 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [NULL]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(53): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:23:20 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-06 04:23:45 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [NULL]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(53): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:23:58 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [NULL]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(53): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Warning: Warning (2): var_export does not handle circular references in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php, line 1173]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+var_export - [internal], line ??
+Cake\ORM\Table::Cake\ORM\{closure}() - CORE\src\ORM\Table.php, line 1173
+array_map - [internal], line ??
+Cake\ORM\Table::get() - CORE\src\ORM\Table.php, line 1174
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:24:26 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [NULL, NULL, true, NULL, NULL, false, NULL, Cake\Database\Connection::__set_state(array(
+   '_config' => 
+  array (
+    'driver' => 'Cake\\Database\\Driver\\Mysql',
+    'persistent' => false,
+    'host' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'pruebaonline',
+    'encoding' => 'utf8',
+    'timezone' => 'UTC',
+    'flags' => 
+    array (
+    ),
+    'cacheMetadata' => true,
+    'log' => false,
+    'quoteIdentifiers' => false,
+    'url' => NULL,
+    'name' => 'default',
+  ),
+   '_driver' => 
+  Cake\Database\Driver\Mysql::__set_state(array(
+     '_baseConfig' => 
+    array (
+      'persistent' => true,
+      'host' => 'localhost',
+      'username' => 'root',
+      'password' => '',
+      'database' => 'cake',
+      'port' => '3306',
+      'flags' => 
+      array (
+      ),
+      'encoding' => 'utf8',
+      'timezone' => NULL,
+      'init' => 
+      array (
+      ),
+    ),
+     '_config' => 
+    array (
+      'driver' => 'Cake\\Database\\Driver\\Mysql',
+      'persistent' => false,
+      'host' => 'localhost',
+      'username' => 'root',
+      'password' => '',
+      'database' => 'pruebaonline',
+      'encoding' => 'utf8',
+      'timezone' => 'UTC',
+      'flags' => 
+      array (
+      ),
+      'cacheMetadata' => true,
+      'log' => false,
+      'quoteIdentifiers' => false,
+      'url' => NULL,
+      'name' => 'default',
+      'port' => '3306',
+      'init' => 
+      array (
+      ),
+    ),
+     '_autoQuoting' => false,
+     '_startQuote' => '`',
+     '_endQuote' => '`',
+     '_schemaDialect' => 
+    Cake\Database\Schema\MysqlSchema::__set_state(array(
+       '_driver' => NULL,
+    )),
+     '_connection' => 
+    PDO::__set_state(array(
+    )),
+  )),
+   '_transactionLevel' => 0,
+   '_transactionStarted' => false,
+   '_useSavePoints' => false,
+   '_logQueries' => false,
+   '_logger' => NULL,
+   '_schemaCollection' => 
+  Cake\Database\Schema\CachedCollection::__set_state(array(
+     '_cache' => '_cake_model_',
+     '_connection' => NULL,
+     '_dialect' => 
+    Cake\Database\Schema\MysqlSchema::__set_state(array(
+       '_driver' => 
+      Cake\Database\Driver\Mysql::__set_state(array(
+         '_baseConfig' => 
+        array (
+          'persistent' => true,
+          'host' => 'localhost',
+          'username' => 'root',
+          'password' => '',
+          'database' => 'cake',
+          'port' => '3306',
+          'flags' => 
+          array (
+          ),
+          'encoding' => 'utf8',
+          'timezone' => NULL,
+          'init' => 
+          array (
+          ),
+        ),
+         '_config' => 
+        array (
+          'driver' => 'Cake\\Database\\Driver\\Mysql',
+          'persistent' => false,
+          'host' => 'localhost',
+          'username' => 'root',
+          'password' => '',
+          'database' => 'pruebaonline',
+          'encoding' => 'utf8',
+          'timezone' => 'UTC',
+          'flags' => 
+          array (
+          ),
+          'cacheMetadata' => true,
+          'log' => false,
+          'quoteIdentifiers' => false,
+          'url' => NULL,
+          'name' => 'default',
+          'port' => '3306',
+          'init' => 
+          array (
+          ),
+        ),
+         '_autoQuoting' => false,
+         '_startQuote' => '`',
+         '_endQuote' => '`',
+         '_schemaDialect' => NULL,
+         '_connection' => 
+        PDO::__set_state(array(
+        )),
+      )),
+    )),
+  )),
+)), 'select', array (
+  'delete' => true,
+  'update' => 
+  array (
+  ),
+  'set' => 
+  array (
+  ),
+  'insert' => 
+  array (
+  ),
+  'values' => 
+  array (
+  ),
+  'select' => 
+  array (
+    'count' => 
+    Cake\Database\Expression\FunctionExpression::__set_state(array(
+       '_name' => 'COUNT',
+       '_conjunction' => ',',
+       '_conditions' => 
+      array (
+        0 => '*',
+      ),
+       '_typeMap' => 
+      Cake\Database\TypeMap::__set_state(array(
+         '_defaults' => 
+        array (
+        ),
+         '_types' => 
+        array (
+        ),
+      )),
+       '_returnType' => 'integer',
+    )),
+  ),
+  'distinct' => false,
+  'modifier' => 
+  array (
+  ),
+  'from' => 
+  array (
+  ),
+  'join' => 
+  array (
+  ),
+  'where' => NULL,
+  'group' => 
+  array (
+  ),
+  'having' => NULL,
+  'order' => NULL,
+  'limit' => NULL,
+  'offset' => NULL,
+  'union' => 
+  array (
+  ),
+  'epilog' => NULL,
+), true, array (
+), NULL, NULL, Cake\Database\FunctionsBuilder::__set_state(array(
+)), true, NULL, false, Cake\Database\TypeMap::__set_state(array(
+   '_defaults' => 
+  array (
+    'Evaluacionpreguntas__id' => 'integer',
+    'Evaluacionpreguntas.id' => 'integer',
+    'id' => 'integer',
+    'Evaluacionpreguntas__evaluacion_id' => 'integer',
+    'Evaluacionpreguntas.evaluacion_id' => 'integer',
+    'evaluacion_id' => 'integer',
+    'Evaluacionpreguntas__pregunta_id' => 'integer',
+    'Evaluacionpreguntas.pregunta_id' => 'integer',
+    'pregunta_id' => 'integer',
+    'Evaluacionpreguntas__created' => 'datetime',
+    'Evaluacionpreguntas.created' => 'datetime',
+    'created' => 'datetime',
+    'Evaluacionpreguntas__modified' => 'datetime',
+    'Evaluacionpreguntas.modified' => 'datetime',
+    'modified' => 'datetime',
+  ),
+   '_types' => 
+  array (
+  ),
+)), App\Model\Table\EvaluacionpreguntasTable::__set_state(array(
+   '_table' => 'evaluacionpreguntas',
+   '_alias' => 'Evaluacionpreguntas',
+   '_connection' => 
+  Cake\Database\Connection::__set_state(array(
+     '_config' => 
+    array (
+      'driver' => 'Cake\\Database\\Driver\\Mysql',
+      'persistent' => false,
+      'host' => 'localhost',
+      'username' => 'root',
+      'password' => '',
+      'database' => 'pruebaonline',
+      'encoding' => 'utf8',
+      'timezone' => 'UTC',
+      'flags' => 
+      array (
+      ),
+      'cacheMetadata' => true,
+      'log' => false,
+      'quoteIdentifiers' => false,
+      'url' => NULL,
+      'name' => 'default',
+    ),
+     '_driver' => 
+    Cake\Database\Driver\Mysql::__set_state(array(
+       '_baseConfig' => 
+      array (
+        'persistent' => true,
+        'host' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'cake',
+        'port' => '3306',
+        'flags' => 
+        array (
+        ),
+        'encoding' => 'utf8',
+        'timezone' => NULL,
+        'init' => 
+        array (
+        ),
+      ),
+       '_config' => 
+      array (
+        'driver' => 'Cake\\Database\\Driver\\Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'pruebaonline',
+        'encoding' => 'utf8',
+        'timezone' => 'UTC',
+        'flags' => 
+        array (
+        ),
+        'cacheMetadata' => true,
+        'log' => false,
+        'quoteIdentifiers' => false,
+        'url' => NULL,
+        'name' => 'default',
+        'port' => '3306',
+        'init' => 
+        array (
+        ),
+      ),
+       '_autoQuoting' => false,
+       '_startQuote' => '`',
+       '_endQuote' => '`',
+       '_schemaDialect' => 
+      Cake\Database\Schema\MysqlSchema::__set_state(array(
+         '_driver' => NULL,
+      )),
+       '_connection' => 
+      PDO::__set_state(array(
+      )),
+    )),
+     '_transactionLevel' => 0,
+     '_transactionStarted' => false,
+     '_useSavePoints' => false,
+     '_logQueries' => false,
+     '_logger' => NULL,
+     '_schemaCollection' => 
+    Cake\Database\Schema\CachedCollection::__set_state(array(
+       '_cache' => '_cake_model_',
+       '_connection' => NULL,
+       '_dialect' => 
+      Cake\Database\Schema\MysqlSchema::__set_state(array(
+         '_driver' => 
+        Cake\Database\Driver\Mysql::__set_state(array(
+           '_baseConfig' => 
+          array (
+            'persistent' => true,
+            'host' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'cake',
+            'port' => '3306',
+            'flags' => 
+            array (
+            ),
+            'encoding' => 'utf8',
+            'timezone' => NULL,
+            'init' => 
+            array (
+            ),
+          ),
+           '_config' => 
+          array (
+            'driver' => 'Cake\\Database\\Driver\\Mysql',
+            'persistent' => false,
+            'host' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'pruebaonline',
+            'encoding' => 'utf8',
+            'timezone' => 'UTC',
+            'flags' => 
+            array (
+            ),
+            'cacheMetadata' => true,
+            'log' => false,
+            'quoteIdentifiers' => false,
+            'url' => NULL,
+            'name' => 'default',
+            'port' => '3306',
+            'init' => 
+            array (
+            ),
+          ),
+           '_autoQuoting' => false,
+           '_startQuote' => '`',
+           '_endQuote' => '`',
+           '_schemaDialect' => NULL,
+           '_connection' => 
+          PDO::__set_state(array(
+          )),
+        )),
+      )),
+    )),
+  )),
+   '_schema' => 
+  Cake\Database\Schema\Table::__set_state(array(
+     '_table' => 'evaluacionpreguntas',
+     '_columns' => 
+    array (
+      'id' => 
+      array (
+        'type' => 'integer',
+        'length' => 11,
+        'unsigned' => false,
+        'null' => false,
+        'default' => NULL,
+        'comment' => '',
+        'autoIncrement' => true,
+        'baseType' => NULL,
+        'precision' => NULL,
+      ),
+      'evaluacion_id' => 
+      array (
+        'type' => 'integer',
+        'length' => 11,
+        'unsigned' => false,
+        'null' => false,
+        'default' => NULL,
+        'comment' => '',
+        'baseType' => NULL,
+        'precision' => NULL,
+        'autoIncrement' => NULL,
+      ),
+      'pregunta_id' => 
+      array (
+        'type' => 'integer',
+        'length' => 11,
+        'unsigned' => false,
+        'null' => false,
+        'default' => NULL,
+        'comment' => '',
+        'baseType' => NULL,
+        'precision' => NULL,
+        'autoIncrement' => NULL,
+      ),
+      'created' => 
+      array (
+        'type' => 'datetime',
+        'length' => NULL,
+        'null' => false,
+        'default' => NULL,
+        'comment' => '',
+        'baseType' => NULL,
+        'precision' => NULL,
+      ),
+      'modified' => 
+      array (
+        'type' => 'datetime',
+        'length' => NULL,
+        'null' => false,
+        'default' => NULL,
+        'comment' => '',
+        'baseType' => NULL,
+        'precision' => NULL,
+      ),
+    ),
+     '_typeMap' => 
+    array (
+      'id' => 'integer',
+      'evaluacion_id' => 'integer',
+      'pregunta_id' => 'integer',
+      'created' => 'datetime',
+      'modified' => 'datetime',
+    ),
+     '_indexes' => 
+    array (
+    ),
+     '_constraints' => 
+    array (
+      'primary' => 
+      array (
+        'type' => 'primary',
+        'columns' => 
+        array (
+          0 => 'id',
+        ),
+        'length' => 
+        array (
+        ),
+      ),
+    ),
+     '_options' => 
+    array (
+      'engine' => 'InnoDB',
+      'collation' => 'utf8_spanish_ci',
+    ),
+     '_temporary' => false,
+  )),
+   '_primaryKey' => 'id',
+   '_displayField' => 'id',
+   '_associations' => 
+  Cake\ORM\AssociationCollection::__set_state(array(
+     '_items' => 
+    array (
+      'evaluacions' => 
+      Cake\ORM\Association\BelongsTo::__set_state(array(
+         '_validStrategies' => 
+        array (
+          0 => 'join',
+          1 => 'select',
+        ),
+         '_name' => 'Evaluacions',
+         '_className' => NULL,
+         '_bindingKey' => NULL,
+         '_foreignKey' => 'evaluacion_id',
+         '_conditions' => 
+        array (
+        ),
+         '_dependent' => false,
+         '_cascadeCallbacks' => false,
+         '_sourceTable' => NULL,
+         '_targetTable' => NULL,
+         '_joinType' => 'INNER',
+         '_propertyName' => NULL,
+         '_strategy' => 'join',
+         '_finder' => 'all',
+         '_tableLocator' => NULL,
+      )),
+      'preguntas' => 
+      Cake\ORM\Association\BelongsTo::__set_state(array(
+         '_validStrategies' => 
+        array (
+          0 => 'join',
+          1 => 'select',
+        ),
+         '_name' => 'Preguntas',
+         '_className' => NULL,
+         '_bindingKey' => NULL,
+         '_foreignKey' => 'pregunta_id',
+         '_conditions' => 
+        array (
+        ),
+         '_dependent' => false,
+         '_cascadeCallbacks' => false,
+         '_sourceTable' => NULL,
+         '_targetTable' => NULL,
+         '_joinType' => 'INNER',
+         '_propertyName' => NULL,
+         '_strategy' => 'join',
+         '_finder' => 'all',
+         '_tableLocator' => NULL,
+      )),
+    ),
+  )),
+   '_behaviors' => 
+  Cake\ORM\BehaviorRegistry::__set_state(array(
+     '_table' => NULL,
+     '_methodMap' => 
+    array (
+      'timestamp' => 
+      array (
+        0 => 'Timestamp',
+        1 => 'timestamp',
+      ),
+      'touch' => 
+      array (
+        0 => 'Timestamp',
+        1 => 'touch',
+      ),
+    ),
+     '_finderMap' => 
+    array (
+    ),
+     '_loaded' => 
+    array (
+      'Timestamp' => 
+      Cake\ORM\Behavior\TimestampBehavior::__set_state(array(
+         '_defaultConfig' => 
+        array (
+          'implementedFinders' => 
+          array (
+          ),
+          'implementedMethods' => 
+          array (
+            'timestamp' => 'timestamp',
+            'touch' => 'touch',
+          ),
+          'events' => 
+          array (
+            'Model.beforeSave' => 
+            array (
+              'created' => 'new',
+              'modified' => 'always',
+            ),
+          ),
+          'refreshTimestamp' => true,
+        ),
+         '_ts' => NULL,
+         '_table' => NULL,
+         '_config' => 
+        array (
+          'implementedFinders' => 
+          array (
+          ),
+          'implementedMethods' => 
+          array (
+            'timestamp' => 'timestamp',
+            'touch' => 'touch',
+          ),
+          'events' => 
+          array (
+            'Model.beforeSave' => 
+            array (
+              'created' => 'new',
+              'modified' => 'always',
+            ),
+          ),
+          'refreshTimestamp' => true,
+        ),
+         '_configInitialized' => true,
+      )),
+    ),
+     '_eventManager' => 
+    Cake\Event\EventManager::__set_state(array(
+       '_listeners' => 
+      array (
+        'Model.beforeSave' => 
+        array (
+          10 => 
+          array (
+            0 => 
+            array (
+              'callable' => 
+              array (
+                0 => 
+                Cake\ORM\Behavior\TimestampBehavior::__set_state(array(
+                   '_defaultConfig' => 
+                  array (
+                    'implementedFinders' => 
+                    array (
+                    ),
+                    'implementedMethods' => 
+                    array (
+                      'timestamp' => 'timestamp',
+                      'touch' => 'touch',
+                    ),
+                    'events' => 
+                    array (
+                      'Model.beforeSave' => 
+                      array (
+                        'created' => 'new',
+                        'modified' => 'always',
+                      ),
+                    ),
+                    'refreshTimestamp' => true,
+                  ),
+                   '_ts' => NULL,
+                   '_table' => NULL,
+                   '_config' => 
+                  array (
+                    'implementedFinders' => 
+                    array (
+                    ),
+                    'implementedMethods' => 
+                    array (
+                      'timestamp' => 'timestamp',
+                      'touch' => 'touch',
+                    ),
+                    'events' => 
+                    array (
+                      'Model.beforeSave' => 
+                      array (
+                        'created' => 'new',
+                        'modified' => 'always',
+                      ),
+                    ),
+                    'refreshTimestamp' => true,
+                  ),
+                   '_configInitialized' => true,
+                )),
+                1 => 'handleEvent',
+              ),
+            ),
+          ),
+        ),
+      ),
+       '_isGlobal' => false,
+    )),
+     '_eventClass' => '\\Cake\\Event\\Event',
+  )),
+   '_entityClass' => 'App\\Model\\Entity\\Evaluacionpregunta',
+   '_registryAlias' => 'Evaluacionpreguntas',
+   '_eventManager' => 
+  Cake\Event\EventManager::__set_state(array(
+     '_listeners' => 
+    array (
+      'Model.beforeSave' => 
+      array (
+        10 => 
+        array (
+          0 => 
+          array (
+            'callable' => 
+            array (
+              0 => 
+              Cake\ORM\Behavior\TimestampBehavior::__set_state(array(
+                 '_defaultConfig' => 
+                array (
+                  'implementedFinders' => 
+                  array (
+                  ),
+                  'implementedMethods' => 
+                  array (
+                    'timestamp' => 'timestamp',
+                    'touch' => 'touch',
+                  ),
+                  'events' => 
+                  array (
+                    'Model.beforeSave' => 
+                    array (
+                      'created' => 'new',
+                      'modified' => 'always',
+                    ),
+                  ),
+                  'refreshTimestamp' => true,
+                ),
+                 '_ts' => NULL,
+                 '_table' => NULL,
+                 '_config' => 
+                array (
+                  'implementedFinders' => 
+                  array (
+                  ),
+                  'implementedMethods' => 
+                  array (
+                    'timestamp' => 'timestamp',
+                    'touch' => 'touch',
+                  ),
+                  'events' => 
+                  array (
+                    'Model.beforeSave' => 
+                    array (
+                      'created' => 'new',
+                      'modified' => 'always',
+                    ),
+                  ),
+                  'refreshTimestamp' => true,
+                ),
+                 '_configInitialized' => true,
+              )),
+              1 => 'handleEvent',
+            ),
+          ),
+        ),
+      ),
+    ),
+     '_isGlobal' => false,
+  )),
+   '_eventClass' => '\\Cake\\Event\\Event',
+   '_rulesChecker' => NULL,
+   '_validatorClass' => '\\Cake\\Validation\\Validator',
+   '_validators' => 
+  array (
+  ),
+)), NULL, array (
+), array (
+), NULL, array (
+), false]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(52): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:24:46 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [NULL]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:26:23 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacionpreguntas" with primary key [array (
+  '*' => true,
+  'id' => false,
+), array (
+  'id' => 45,
+  'evaluacion_id' => 3,
+  'pregunta_id' => 2,
+  'created' => 
+  Cake\I18n\FrozenTime::__set_state(array(
+     'date' => '2016-07-06 04:06:50.000000',
+     'timezone_type' => 3,
+     'timezone' => 'UTC',
+  )),
+  'modified' => 
+  Cake\I18n\FrozenTime::__set_state(array(
+     'date' => '2016-07-06 04:06:50.000000',
+     'timezone_type' => 3,
+     'timezone' => 'UTC',
+  )),
+), array (
+), array (
+), array (
+), NULL, array (
+), false, array (
+), array (
+), 'Evaluacionpreguntas']
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(55): Cake\ORM\Table->get(Array, Array)
+#1 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 04:31:57 Warning: Warning (2): Missing argument 1 for Cake\ORM\ResultSet::max() in [C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php, line 182]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\ResultSet::max() - CORE\src\Collection\CollectionTrait.php, line 182
+Cake\ORM\Query::_call() - CORE\src\Datasource\QueryTrait.php, line 449
+Cake\ORM\Query::__call() - CORE\src\ORM\Query.php, line 1077
+App\Controller\EvaluacionpreguntasController::resolver() - APP/Controller\EvaluacionpreguntasController.php, line 48
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 04:31:57 Error: [Error] Function name must be a string
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(184): Cake\Collection\Iterator\SortIterator->__construct(Array, NULL, 3, 1)
+#1 [internal function]: Cake\ORM\ResultSet->max()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(449): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Query.php(1077): Cake\ORM\Query->_call('max', Array)
+#4 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(48): Cake\ORM\Query->__call('max', Array)
+#5 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#9 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-06 04:33:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "evaluacionpreguntas"
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(55): Cake\ORM\Table->get(Array, Array)
+#2 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#6 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-07-06 04:34:51 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-06 04:34:53 Error: [Error] Cannot use object of type Cake\ORM\Query as array
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-06 04:36:15 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "evaluacionpreguntas"
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(55): Cake\ORM\Table->get(Array, Array)
+#2 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#6 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-07-06 04:37:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "evaluacionpreguntas"
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(55): Cake\ORM\Table->get(Array, Array)
+#2 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#6 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-07-06 04:48:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Evaluacionpreguntas.categoria_id' in 'field list'
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Connection.php(272): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Query.php(921): Cake\Database\Query->execute()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Query.php(871): Cake\ORM\Query->_all()
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->all()
+#7 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(48): Cake\ORM\Query->toArray()
+#8 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#11 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#12 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-06 04:51:24 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pruebaonline.evalucions' doesn't exist
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'evalucions', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('evalucions', Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('evalucions')
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(1243): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\ORM\Table.php(946): Cake\ORM\Table->query()
+#7 C:\xampp\htdocs\pruebaonline2\src\Controller\EvaluacionpreguntasController.php(56): Cake\ORM\Table->find('all')
+#8 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#11 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#12 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-06 04:51:43 Error: [Error] Call to undefined function App\Controller\concat()
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-06 04:56:29 Error: [ParseError] syntax error, unexpected ')', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 05:02:45 Error: [ParseError] syntax error, unexpected end of file
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 05:06:35 Error: [ParseError] syntax error, unexpected ')', expecting ']'
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Eva...', 'App')
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(91): Cake\Core\App::className('Evaluacionpregu...', 'Controller', 'Controller')
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#12 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-06 05:08:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:08:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:08:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:12:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:12:50 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:12:51 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:38 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:40 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:40 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:40 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:41 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:41 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:13:41 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:14:52 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:14:52 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:14:52 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:16:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:16:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:16:15 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:16:44 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 05:17:31 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:17:31 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:17:31 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:18:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:18:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:18:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:35:47 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:35:47 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:35:47 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:00 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:00 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:00 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:28 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:28 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:28 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:37:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:38:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:38:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:38:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\pruebaonline2\src\Template\Evaluacionpreguntas\resolver.ctp, line 32]
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacionpreguntas\resolver.ctp, line 32
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-07-06 05:46:41 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline2/respuestas/add
+Referer URL: http://localhost/pruebaonline2/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-07-06 05:50:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacion could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacion',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/evaluacion
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-06 06:00:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluacion could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluacion',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/Evaluacion
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-19 01:51:06 Error: [ParseError] syntax error, unexpected '=', expecting ']'
+Request URL: /pruebaonline2/evaluacions/view/3
+Referer URL: http://localhost/pruebaonline2/evaluacions
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(151): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Eva...', 'App')
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(91): Cake\Core\App::className('Evaluacions', 'Controller', 'Controller')
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(51): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#8 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(390): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventManager.php(356): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#10 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#11 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#12 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-10-19 01:51:32 Error: [Error] Call to undefined method App\Model\Entity\Evaluacionpregunta::where()
+Request URL: /pruebaonline2/evaluacionpreguntas/resolver
+Referer URL: http://localhost/pruebaonline2/evaluacions/view/3
+Stack Trace:
+#0 [internal function]: App\Controller\EvaluacionpreguntasController->resolver()
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionpreguntasController))
+#4 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-10-19 20:02:05 Error: [Cake\View\Exception\MissingElementException] navbar.Element\ctp.ctp
+Request URL: /pruebaonline2/nivels
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Template\Layout\default.ctp(38): Cake\View\View->element('ctp')
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(992): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#5 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#6 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#7 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\NivelsController))
+#8 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2016-10-19 20:15:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluaciones could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluaciones',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/evaluaciones
+Referer URL: http://localhost/pruebaonline2/categorias
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-19 20:16:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluaciones could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluaciones',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/evaluaciones
+Referer URL: http://localhost/pruebaonline2/categorias
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-19 20:16:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Evaluaciones could not be found.
+Exception Attributes: array (
+  'class' => 'Evaluaciones',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/evaluaciones/add
+Referer URL: http://localhost/pruebaonline2/categorias
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-20 00:49:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/css/bootstrap.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-20 00:50:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/css/bootstrap.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-20 00:51:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline2/css/bootstrap.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-10-20 00:57:19 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline2/respuestas/add
+Referer URL: http://localhost/pruebaonline2/preguntas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\src\Controller\RespuestasController.php(65): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->add()
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-10-20 01:08:35 Error: [ParseError] syntax error, unexpected ''value'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+Request URL: /pruebaonline2/respuestas/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline2\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline2\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
