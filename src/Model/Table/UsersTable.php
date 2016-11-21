@@ -10,6 +10,10 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
+ * @property \Cake\ORM\Association\HasMany $Bibliotecas
+ * @property \Cake\ORM\Association\HasMany $Categoriausers
+ * @property \Cake\ORM\Association\HasMany $Evaluacionpreguntas
+ * @property \Cake\ORM\Association\HasMany $Presentados
  */
 class UsersTable extends Table
 {
@@ -29,6 +33,19 @@ class UsersTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
+
+        $this->hasMany('Bibliotecas', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->hasMany('Categoriausers', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->hasMany('Evaluacionpreguntas', [
+            'foreignKey' => 'user_id'
+        ]);
+        $this->hasMany('Presentados', [
+            'foreignKey' => 'user_id'
+        ]);
     }
 
     /**

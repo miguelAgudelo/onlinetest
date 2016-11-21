@@ -18,7 +18,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><?php echo $this->Html->link("Crear Categoria", ['controller'=>'categorias','action' =>'add']);?></li>
-            <li><?php echo $this->Html->link("Agregar  Evaluaciones a ategoria", ['controller'=>'categorias','action' =>'add2']);?></li>
+            <li><?php echo $this->Html->link("Agregar  Evaluaciones a Categoria", ['controller'=>'categorias','action' =>'add2']);?></li>
             <li><?php echo $this->Html->link("Lista de Categorias", ['controller'=>'categorias']);?></li>
           </ul>
         </li>
@@ -44,22 +44,6 @@
           <ul class="dropdown-menu">
            <li><?php echo $this->Html->link("Crear Respuestas", ['controller'=>'respuestas','action' =>'add']);?></li>
            <li><li><?php echo $this->Html->link("Lista de Respuestas", ['controller'=>'respuestas']);?></li></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tipos <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><?php echo $this->Html->link("Crear Tipos de pregunta", ['controller'=>'tipos','action' =>'add']);?></li>
-            <li><li><?php echo $this->Html->link("Lista de Tipos de pregunta", ['controller'=>'tipos']);?></li></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Niveles<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-           <li><?php echo $this->Html->link("Crear Niveles de prueba", ['controller'=>'nivels','action' =>'add']);?></li>
-           <li><li><?php echo $this->Html->link("Lista de Niveles de prueba", ['controller'=>'nivels']);?></li></li>
           </ul>
         </li>
       </ul>

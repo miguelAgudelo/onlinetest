@@ -44,24 +44,19 @@ class EvaluacionpreguntasController extends AppController
         $this->set('_serialize', ['evaluacionpregunta']);
     }
 
-    public function resolver()
-    {   $query = $this->Evaluacionpreguntas->find()->select(['id','evaluacion_id'])->toArray();
-        for ($i=0; $i <count($query) ; $i++) { 
-            $e=$query[$i]->id;
-            $a=$query[$i]->evaluacion_id;
-        }
-        $id=intval($e);
-        $categoria=intval($a);
-
-        $evaluacions = TableRegistry::get('Evaluacions');
-        $evaluacion= $evaluacions->find('all')->where(['id'=>$a])->select(['categoria_id'])->toArray();
-        $evaluacionpregunta = $this->Evaluacionpreguntas->get($id, [
-            'contain' => ['Evaluacions', 'Preguntas'],'where'=>['user_id'=>1]
-        ]);
+    public function resolver($id = null)
+    {   
+        $evaluacionpregunta=$this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$id,'user_id'=>1])->toArray();
+        $evaluacions=TableRegistry::get('Evaluacions');
+        $evaluacion=$evaluacions->find()->where(['id'=>$id])->toArray();
+        $pregunta=array();
         $preguntas = TableRegistry::get('Preguntas');
-        $pregunta= $preguntas->find('all',['contain' => ['Respuestas']])->where(['categoria_id'=>$evaluacion[0]->categoria_id])->toArray();
+        for ($i=0; $i <count($evaluacionpregunta) ; $i++) { 
+            $pid=$preguntas->find()->where(['id'=>$evaluacionpregunta[$i]->pregunta_id])->contain(['Respuestas'])->toArray();
+            array_push($pregunta, $pid);
+        }
         
-        $this->set(compact('evaluacionpregunta','pregunta'));
+        $this->set(compact('evaluacionpregunta','evaluacion','pregunta'));
         $this->set('_serialize', ['evaluacionpregunta']);
     }
 

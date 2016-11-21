@@ -19,13 +19,16 @@
             <td><?= h($evaluacion->created) ?></td>
         </tr>
     </table>
-         <center><?= $this->Form->button('Realizar',['id'=>'realizar','class'=>'btn btn-info']) ?></center>   
+         <center><?= $this->Form->button('Realizar',['id'=>'realizar','class'=>'btn btn-info']) ?></center>  
+         <?= $this->Form->input('evaluacion_id', ['value'=>$evaluacion->id,'type'=>'hidden']); ?>
     </div>
 
 </div>
 <script type="text/javascript">
     $(document).on('ready',function(){
+
         $('#realizar').on('click',function(){
+            var x =$('#idi').val();
             var n=1;
             $.ajax({
                 data: {"numero" : n},
@@ -33,8 +36,12 @@
                 type:  'post',
                 dataType:'json', beforeSend: function (xhr) {
                         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-                        console.log("enviado");
-                        setTimeout('window.location.replace("http://localhost/pruebaonline2/evaluacionpreguntas/resolver")',2000);  
+                        function explode(){
+                          var resultado="http://localhost/pruebaonline3/evaluacionpreguntas/resolver/"+$('#evaluacion-id').val();
+                          window.location.href = resultado;
+                        }
+                         
+                        setTimeout(explode, 5000);
                 },
                 success:  function (response){
                     console.log(response);
@@ -42,5 +49,7 @@
                                  }
                  });
          });
+        
+        
     });
 </script>

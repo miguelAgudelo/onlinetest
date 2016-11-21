@@ -19,7 +19,7 @@ class PreguntasController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Categorias', 'Nivels', 'Tipos']
+            'contain' => ['Categorias']
         ];
         $preguntas = $this->paginate($this->Preguntas);
 
@@ -77,9 +77,8 @@ class PreguntasController extends AppController
             }
         }
         $categorias = $this->Preguntas->Categorias->find('list', ['limit' => 200]);
-        $nivels = $this->Preguntas->Nivels->find('list', ['limit' => 200]);
-        $tipos = $this->Preguntas->Tipos->find('list', ['limit' => 200]);
-        $this->set(compact('pregunta', 'categorias', 'nivels', 'tipos'));
+      
+        $this->set(compact('pregunta', 'categorias'));
         $this->set('_serialize', ['pregunta']);
     }
 

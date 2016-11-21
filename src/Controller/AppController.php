@@ -43,6 +43,17 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'Evaluacions',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'display',
+                'home'
+            ]
+        ]);
     }
 
     /**
@@ -51,6 +62,10 @@ class AppController extends Controller
      * @param \Cake\Event\Event $event The beforeRender event.
      * @return void
      */
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['display']);
+    }
     public function beforeRender(Event $event)
     {
         if (!array_key_exists('_serialize', $this->viewVars) &&

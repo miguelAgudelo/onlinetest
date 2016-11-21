@@ -39,14 +39,7 @@ class PreguntasTable extends Table
             'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Nivels', [
-            'foreignKey' => 'nivel_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('Tipos', [
-            'foreignKey' => 'tipo_id',
-            'joinType' => 'INNER'
-        ]);
+        
         $this->hasMany('Evaluacionpreguntas', [
             'foreignKey' => 'pregunta_id'
         ]);
@@ -76,6 +69,11 @@ class PreguntasTable extends Table
         $validator
             ->allowEmpty('dir');
 
+         $validator
+            ->integer('nivel')
+            ->requirePresence('nivel', 'create')
+            ->notEmpty('nivel');
+
         return $validator;
     }
 
@@ -89,8 +87,6 @@ class PreguntasTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['categoria_id'], 'Categorias'));
-        $rules->add($rules->existsIn(['nivel_id'], 'Nivels'));
-        $rules->add($rules->existsIn(['tipo_id'], 'Tipos'));
         return $rules;
     }
 }

@@ -23,7 +23,7 @@
                 <td><?= h($pregunta->texto) ?></td>
           
                 <td><?= $pregunta->has('categoria') ? $this->Html->link($pregunta->categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $pregunta->categoria->id]) : '' ?></td>
-                <td><?= $pregunta->has('nivel') ? $this->Html->link($pregunta->nivel->dificultad, ['controller' => 'Nivels', 'action' => 'view', $pregunta->nivel->id]) : '' ?></td>
+                <td><?php if($pregunta->nivel==1){ echo "facil";}elseif($pregunta->nivel==2){ echo "medio";}else{ echo "dificil";} ?></td>
                 
                 <td><?= h($pregunta->created) ?></td>
                

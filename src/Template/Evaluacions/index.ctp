@@ -8,7 +8,7 @@
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nombre') ?></th>
                 <th><?= $this->Paginator->sort('ponderada') ?></th>
-                <th><?= $this->Paginator->sort('cantidad') ?></th>
+               
                 <th><?= $this->Paginator->sort('categoria_id') ?></th>
                 <th><?= $this->Paginator->sort('creada') ?></th>
                 
@@ -21,7 +21,7 @@
                 <td><?= $this->Number->format($evaluacion->id) ?></td>
                 <td><?= h($evaluacion->nombre) ?></td>
                 <td><?= h($evaluacion->ponderada) ?></td>
-                <td><?= $this->Number->format($evaluacion->cantidad) ?></td>
+                
                 <td><?= $evaluacion->has('categoria') ? $this->Html->link($evaluacion->categoria->nombre, ['controller' => 'Categorias', 'action' => 'view', $evaluacion->categoria->id]) : '' ?></td>
                 <td><?= h($evaluacion->created) ?></td>
                

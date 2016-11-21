@@ -39,6 +39,14 @@ class EvaluacionsTable extends Table
         $this->hasMany('Evaluacionpreguntas', [
             'foreignKey' => 'evaluacion_id'
         ]);
+
+        $this->hasMany('Requisitos', [
+            'foreignKey' => 'evaluacion_id'
+        ]);
+
+         $this->hasMany('Presentados', [
+            'foreignKey' => 'evaluacion_id'
+        ]);
     }
 
     /**
@@ -61,10 +69,7 @@ class EvaluacionsTable extends Table
             ->requirePresence('ponderada', 'create')
             ->notEmpty('ponderada');
 
-        $validator
-            ->integer('cantidad')
-            ->requirePresence('cantidad', 'create')
-            ->notEmpty('cantidad');
+       
 
         return $validator;
     }

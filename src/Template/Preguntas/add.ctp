@@ -10,11 +10,11 @@
         <?= $this->Form->input('categoria_id', ['options' => $categorias,'label'=>'','class'=>"form-control"]); ?>
         <div class="form-group">
         <label for="nivel">¿Elija el nivel?</label>
-        <?= $this->Form->input('nivel_id', ['options' => $nivels,'label'=>'','class'=>"form-control"]); ?>
+        <?= $this->Form->input('nivel', ['options' => [1=>'facil',2=>'medio',3=>'dificil'],'label'=>'','class'=>"form-control"]); ?>
         </div>
         <div class="form-group">
         <label for="tipo">¿Tipo de pregunta?</label>
-        <?= $this->Form->input('tipo_id', ['options' => $tipos,'label'=>'','class'=>"form-control"]);  ?>
+        <?= $this->Form->input('tipo', ['options' => [1=>'seleccion simple'],'label'=>'','class'=>"form-control"]);  ?>
         </div>
        <?= $this->Form->button('agregar selecciones', ['id'=>'sub','type'=>'button','class'=>"btn btn-primary"]); ?>
         <?= $this->Form->input('numerador', ['id'=>'numerador','type'=>'hidden']); ?>
