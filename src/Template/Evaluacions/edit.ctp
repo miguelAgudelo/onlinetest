@@ -1,31 +1,28 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $evaluacion->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $evaluacion->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Evaluacions'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Evaluacionpreguntas'), ['controller' => 'Evaluacionpreguntas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Evaluacionpregunta'), ['controller' => 'Evaluacionpreguntas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Categoria'), ['controller' => 'Categorias', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="evaluacions form large-9 medium-8 columns content">
+
+<div class="container-fluid">
     <?= $this->Form->create($evaluacion) ?>
     <fieldset>
-        <legend><?= __('Edit Evaluacion') ?></legend>
-        <?php
-            echo $this->Form->input('nombre');
-            echo $this->Form->input('ponderada');
-            echo $this->Form->input('cantidad');
-            echo $this->Form->input('categoria_id');
-            echo $this->Form->input('categorias._ids', ['options' => $categorias]);
-        ?>
+        <legend><?= __('Editar la Evaluacion') ?></legend>
+        <div class="form-group">
+        <label for="nombre">Nombre de la evaluación</label>
+           <?= $this->Form->input('nombre',['class'=>"form-control",'label'=>'']) ?>
+        </div>
+        <div class="form-group">
+        <label for="ponderada">¿Es una Ponderada?</label> 
+           <?= $this->Form->input('ponderada',['class'=>"form-control",'label'=>'','options'=>['Si'=>'Si','No'=>'No']]) ?>
+        </div>
+        <div class="form-group">
+        <label for="categoria_id">Materia a la que pertenece la evaluacion</label>  
+           <?= $this->Form->input('categoria_id',['label'=>'','class'=>"form-control"]) ?>
+        </div>
+            
+      
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button('Actualizar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?>
     <?= $this->Form->end() ?>
 </div>
+<script type="text/javascript">
+    $(document).on('ready',function(){
+        $('#categoria-id').select2();
+    });
+</script>

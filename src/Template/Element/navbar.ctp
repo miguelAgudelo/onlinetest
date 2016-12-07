@@ -46,6 +46,12 @@
            <li><li><?php echo $this->Html->link("Lista de Respuestas", ['controller'=>'respuestas']);?></li></li>
           </ul>
         </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mi perfil <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><li><?php echo $this->Html->link("Salir del sistema", ['controller'=>'users','action'=>'logout']);?></li></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

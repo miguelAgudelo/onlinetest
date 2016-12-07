@@ -11,7 +11,7 @@ use Cake\Validation\Validator;
  * Respuestas Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Preguntas
- * @property \Cake\ORM\Association\BelongsTo $Tipos
+ * @property \Cake\ORM\Association\HasMany $Resultados
  */
 class RespuestasTable extends Table
 {
@@ -36,7 +36,9 @@ class RespuestasTable extends Table
             'foreignKey' => 'pregunta_id',
             'joinType' => 'INNER'
         ]);
-       
+        $this->hasMany('Resultados', [
+            'foreignKey' => 'respuesta_id'
+        ]);
     }
 
     /**
@@ -61,7 +63,7 @@ class RespuestasTable extends Table
             ->allowEmpty('dir');
 
         $validator
-            ->boolean('correcta')
+            ->integer('correcta')
             ->requirePresence('correcta', 'create')
             ->notEmpty('correcta');
 
@@ -78,7 +80,6 @@ class RespuestasTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['pregunta_id'], 'Preguntas'));
-       
         return $rules;
     }
 }

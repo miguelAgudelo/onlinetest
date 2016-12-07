@@ -29,8 +29,6 @@
             echo $this->Form->input('photo');
             echo $this->Form->input('dir');
             echo $this->Form->input('categoria_id', ['options' => $categorias]);
-            echo $this->Form->input('nivel_id', ['options' => $nivels]);
-            echo $this->Form->input('tipo_id', ['options' => $tipos]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

@@ -19,8 +19,12 @@
             <td><?= h($evaluacion->created) ?></td>
         </tr>
     </table>
-         <center><?= $this->Form->button('Realizar',['id'=>'realizar','class'=>'btn btn-info']) ?></center>  
+        <?php if(count($presentado2)==0): ?>
+         <center><?= $this->Form->button('Realizar',['id'=>'realizar','class'=>'btn btn-primary']) ?></center>  
          <?= $this->Form->input('evaluacion_id', ['value'=>$evaluacion->id,'type'=>'hidden']); ?>
+        <?php else: ?>
+        <center><h5>Ya usted ha presentado esta prueba</h5></center>
+        <?php endif; ?>
     </div>
 
 </div>

@@ -59,10 +59,7 @@ class ResultadosTable extends Table
             ->requirePresence('correcta', 'create')
             ->notEmpty('correcta');
 
-        $validator
-            ->integer('puntos')
-            ->requirePresence('puntos', 'create')
-            ->notEmpty('puntos');
+       
 
         return $validator;
     }

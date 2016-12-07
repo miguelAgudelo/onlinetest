@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  background-color:#f5f5f5 !important;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -30,6 +31,18 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
+.navbar{
+  height: 70px
+}
+
+.dropdown-toggle{
+  margin-top: 10px;
+}
+
+.navbar-brand{
+  margin-top: 10px;
+}
+
 .container {
   width: auto;
   max-width: 680px;
@@ -39,6 +52,36 @@ body {
   margin: 20px 0;
 }
 
+.container1{
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.container2{
+  padding: 10px;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  -webkit-box-shadow: 1px 1px 1px #C0BEBE;
+
+}
+
+.container3{
+  padding: 10px;
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+  -moz-box-shadow: 1px 1px 1px;
+  -webkit-box-shadow: 1px 1px 1px #C0BEBE;
+
+}
+
 .micontenido{
   padding: 20px;
   margin-top: 10px;
@@ -46,6 +89,42 @@ body {
   box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.39);
   border-radius: 10px 10px 10px 10px;
   border: 0px solid #000000;
+}
+#micuadro{
+  padding: 40px;
+  background-color: #fafafa;
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.39);
+  border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  margin-bottom: 20px;
+}
+#micuadro2{
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.39);
+  border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+  margin-bottom: 20px;
+}
+#mipregunta{
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  box-shadow: 21px 13px 28px -12px rgba(0,0,0,0.37);
+}
+#mirespuestas{
+  padding: 10px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 21px 13px 28px -12px rgba(0,0,0,0.37);
+}
+
+
+
+.separador{
+  background-color:black; 
+  width: 90%;
+  height: 1px;
 }
 
 .form .error-message {
@@ -109,23 +188,6 @@ div.message.hidden {
     height: 0;
 }
 
-#micuadro{
-  padding: 20px;
-  background-color: #fafafa;
-  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.39);
-  border-radius: 10px 10px 10px 10px;
-  border: 0px solid #000000;
-}
-#mipregunta{
-  padding: 10px;
-  background-color: #b3e5fc;
-}
-#mirespuestas{
-  padding: 10px;
-  background-color: #ffffff;
-}
-.separador{
-  background-color:black; 
-  width: 90%;
-  height: 1px;
-}
+
+
+

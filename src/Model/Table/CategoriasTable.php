@@ -35,12 +35,12 @@ class CategoriasTable extends Table
         $this->hasMany('Preguntas', [
             'foreignKey' => 'categoria_id'
         ]);
-      /*  $this->belongsToMany('Evaluacions', [
-            'foreignKey' => 'categoria_id',
-            'targetForeignKey' => 'evaluacion_id',
-            'joinTable' => 'categorias_evaluacions'
-        ]);*/
+      
          $this->hasMany('Evaluacions', [
+            'foreignKey' => 'categoria_id'
+        ]);
+
+        $this->hasMany('Categoriausers', [
             'foreignKey' => 'categoria_id'
         ]);
     }

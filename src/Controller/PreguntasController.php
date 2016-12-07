@@ -37,7 +37,7 @@ class PreguntasController extends AppController
     public function view($id = null)
     {
         $pregunta = $this->Preguntas->get($id, [
-            'contain' => ['Categorias', 'Nivels', 'Tipos', 'Evaluacionpreguntas', 'Respuestas']
+            'contain' => ['Categorias','Evaluacionpreguntas', 'Respuestas']
         ]);
 
         $this->set('pregunta', $pregunta);
@@ -104,9 +104,7 @@ class PreguntasController extends AppController
             }
         }
         $categorias = $this->Preguntas->Categorias->find('list', ['limit' => 200]);
-        $nivels = $this->Preguntas->Nivels->find('list', ['limit' => 200]);
-        $tipos = $this->Preguntas->Tipos->find('list', ['limit' => 200]);
-        $this->set(compact('pregunta', 'categorias', 'nivels', 'tipos'));
+        $this->set(compact('pregunta', 'categorias'));
         $this->set('_serialize', ['pregunta']);
     }
 

@@ -29,9 +29,11 @@ class RespuestasTableTest extends TestCase
         'app.categorias',
         'app.evaluacions',
         'app.evaluacionpreguntas',
-        'app.categorias_evaluacions',
-        'app.nivels',
-        'app.tipos'
+        'app.requisitos',
+        'app.presentados',
+        'app.users',
+        'app.bibliotecas',
+        'app.categoriausers'
     ];
 
     /**

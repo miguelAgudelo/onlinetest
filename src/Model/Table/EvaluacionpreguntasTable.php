@@ -40,6 +40,15 @@ class EvaluacionpreguntasTable extends Table
             'foreignKey' => 'pregunta_id',
             'joinType' => 'INNER'
         ]);
+
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+
+        $this->hasMany('Resultados', [
+            'foreignKey' => 'evaluacionpregunta_id'
+        ]);
     }
 
     /**

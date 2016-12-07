@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2016 a las 05:50:14
+-- Tiempo de generación: 07-12-2016 a las 03:05:16
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 7.0.9
 
@@ -73,6 +73,15 @@ CREATE TABLE `categoriausers` (
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `categoriausers`
+--
+
+INSERT INTO `categoriausers` (`id`, `user_id`, `categoria_id`, `created`, `modified`) VALUES
+(3, 1, 2, '2016-11-23 02:29:45', '2016-11-23 02:29:45'),
+(6, 2, 1, '2016-12-05 04:20:06', '2016-12-05 04:20:06'),
+(7, 1, 1, '2016-12-06 05:43:23', '2016-12-06 05:43:23');
+
 -- --------------------------------------------------------
 
 --
@@ -84,6 +93,7 @@ CREATE TABLE `evaluacionpreguntas` (
   `evaluacion_id` int(11) NOT NULL,
   `pregunta_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `ponderacion` float NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -109,8 +119,9 @@ CREATE TABLE `evaluacions` (
 --
 
 INSERT INTO `evaluacions` (`id`, `nombre`, `ponderada`, `contiempo`, `categoria_id`, `created`, `modified`) VALUES
-(7, 'Prueba corta III', 'Si', NULL, 1, '2016-11-17 05:34:51', '2016-11-17 05:34:51'),
-(9, 'Prueba Larga1', 'Si', NULL, 1, '2016-11-21 04:48:20', '2016-11-21 04:48:20');
+(7, 'Prueba corta 4', 'No', NULL, 1, '2016-11-17 05:34:51', '2016-11-29 20:57:12'),
+(9, 'Prueba Larga1', 'Si', NULL, 1, '2016-11-21 04:48:20', '2016-11-21 04:48:20'),
+(10, 'Prueba de practica de principios de la informatica', 'No', NULL, 5, '2016-11-24 02:24:03', '2016-11-24 02:24:03');
 
 -- --------------------------------------------------------
 
@@ -139,7 +150,9 @@ INSERT INTO `preguntas` (`id`, `texto`, `photo`, `dir`, `categoria_id`, `nivel`,
 (3, 'Que es Java?', NULL, NULL, 1, 1, 1, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
 (4, 'Describa el significado de MVC', NULL, NULL, 1, 2, 1, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
 (5, 'Explique la labor de un desarrollador de frond - end', NULL, NULL, 1, 1, 1, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
-(6, 'QUes es back-end?', NULL, NULL, 1, 1, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46');
+(6, 'QUes es back-end?', NULL, NULL, 1, 1, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
+(8, 'Que es computadora?', NULL, NULL, 5, 1, 1, '2016-11-24 02:22:17', '2016-11-24 02:22:17'),
+(9, 'Historia del computador', NULL, NULL, 5, 1, 1, '2016-11-24 02:23:34', '2016-11-24 02:23:34');
 
 -- --------------------------------------------------------
 
@@ -179,7 +192,8 @@ CREATE TABLE `requisitos` (
 INSERT INTO `requisitos` (`id`, `evaluacion_id`, `nivel`, `tipo`, `cantidad`, `created`, `modified`) VALUES
 (6, 7, 1, 1, 3, '2016-11-20 00:00:00', '2016-11-20 00:00:00'),
 (8, 9, 1, 1, 2, '2016-11-21 04:48:20', '2016-11-21 04:48:20'),
-(9, 9, 2, 1, 1, '2016-11-21 04:48:20', '2016-11-21 04:48:20');
+(9, 9, 2, 1, 1, '2016-11-21 04:48:20', '2016-11-21 04:48:20'),
+(10, 10, 1, 1, 2, '2016-11-24 02:24:03', '2016-11-24 02:24:03');
 
 -- --------------------------------------------------------
 
@@ -193,7 +207,7 @@ CREATE TABLE `respuestas` (
   `texto` varchar(400) COLLATE utf8_spanish_ci DEFAULT NULL,
   `photo` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
   `dir` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `correcta` tinyint(1) NOT NULL,
+  `correcta` int(11) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -209,14 +223,18 @@ INSERT INTO `respuestas` (`id`, `pregunta_id`, `texto`, `photo`, `dir`, `correct
 (6, 3, 'Un perrito', NULL, NULL, 0, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
 (7, 4, 'Modelo-Vista-Controlador', NULL, NULL, 1, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
 (8, 4, 'Malvado villano coreano', NULL, NULL, 0, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
-(9, 5, 'si', NULL, NULL, 0, '2016-11-07 21:50:49', '2016-11-07 21:50:49'),
-(10, 5, 'No', NULL, NULL, 0, '2016-11-07 21:50:49', '2016-11-07 21:50:49'),
 (11, 5, 'Se encarga de vender empanadas', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (12, 5, 'Se encarga de pasear a los perros', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (13, 5, 'Es un gilberto', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (14, 5, 'Es el encargado de desarrollar toda la parte que ve el cliente en un proyecto', NULL, NULL, 1, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (15, 6, 'Es donde se guardan todas las cosas de las pc en mantenimiento', NULL, NULL, 0, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
-(16, 6, 'Es el la parte de desarrollo orientada al servidor', NULL, NULL, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46');
+(16, 6, 'Es el la parte de desarrollo orientada al servidor', NULL, NULL, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
+(17, 7, 'Una maquina de algoritmica', NULL, NULL, 1, '2016-11-24 02:21:18', '2016-11-24 02:21:18'),
+(18, 7, 'una cosa', NULL, NULL, 0, '2016-11-24 02:21:18', '2016-11-24 02:21:18'),
+(19, 8, 'Una maquina de algoritmica', NULL, NULL, 1, '2016-11-24 02:22:17', '2016-11-24 02:22:17'),
+(20, 8, 'Una cosa ', NULL, NULL, 0, '2016-11-24 02:22:17', '2016-11-24 02:22:17'),
+(21, 9, 'Una historia muy interesante', NULL, NULL, 0, '2016-11-24 02:23:34', '2016-11-24 02:23:34'),
+(22, 9, 'tiene 6 generaciones actualmente empezó con maquinas gigantes de poco procesamiento hasta la de nuestros dias ', NULL, NULL, 1, '2016-11-24 02:23:34', '2016-11-24 02:23:34');
 
 -- --------------------------------------------------------
 
@@ -229,9 +247,9 @@ CREATE TABLE `resultados` (
   `evaluacionpregunta_id` int(11) NOT NULL,
   `respuesta_id` int(11) NOT NULL,
   `correcta` int(11) NOT NULL,
-  `puntos` int(11) NOT NULL,
-  `created` int(11) NOT NULL,
-  `modified` int(11) NOT NULL
+  `puntos` float DEFAULT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
@@ -260,7 +278,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nombre`, `apellido`, `cedula`, `sexo`, `direccion`, `username`, `password`, `email`, `role`, `created`, `modified`) VALUES
-(1, 'Miguel', 'Agudelo', 23423654, 'masculino', 'la torre cuatricentenaria', 'miguelhxc', '$2y$10$XAlNsh0YAlnqv4D2bi1xq.VBT7Wg7Y7D5v5KdPTNBiGCnrqD0Q2f2', 'miguelhxc37@gmail.com', 'user', '2016-11-21 02:47:48', '2016-11-21 02:47:48');
+(1, 'Miguel', 'Agudelo', 23423654, 'masculino', 'la torre cuatricentenaria', 'miguelhxc', '$2y$10$XAlNsh0YAlnqv4D2bi1xq.VBT7Wg7Y7D5v5KdPTNBiGCnrqD0Q2f2', 'miguelhxc37@gmail.com', 'admin', '2016-11-21 02:47:48', '2016-11-21 02:47:48'),
+(2, 'Gilberto', 'tonto', 25412345, 'Masculino', 'Por donde vive gilberto', 'soygilberto', '$2y$10$vsMOdd6GdDdwzFCwfc0nw.Kj4e5jfVk4cjvjH6uvk396c4hTm5X2S', 'soygilberto@gmail.com', 'user', '2016-12-05 04:19:09', '2016-12-05 04:19:09');
 
 --
 -- Índices para tablas volcadas
@@ -351,37 +370,37 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `categoriausers`
 --
 ALTER TABLE `categoriausers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `evaluacionpreguntas`
 --
 ALTER TABLE `evaluacionpreguntas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `evaluacions`
 --
 ALTER TABLE `evaluacions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `preguntas`
 --
 ALTER TABLE `preguntas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `presentados`
 --
 ALTER TABLE `presentados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `requisitos`
 --
 ALTER TABLE `requisitos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `respuestas`
 --
 ALTER TABLE `respuestas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT de la tabla `resultados`
 --

@@ -12,9 +12,7 @@ use Cake\ORM\Entity;
  * @property string $texto
  * @property string $photo
  * @property string $dir
- * @property int $tipo_id
- * @property \App\Model\Entity\Tipo $tipo
- * @property bool $correcta
+ * @property int $correcta
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
  */

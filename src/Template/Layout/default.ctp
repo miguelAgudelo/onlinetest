@@ -26,7 +26,7 @@ $cakeDescription = 'Generador de pruebas online';
     </title>
     <?= $this->Html->meta('icon') ?>
     <?= $this->Html->css('style.css') ?>
-    <?= $this->Html->css('bootstrap.css') ?>
+    <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('select2.min.css') ?>
     <?= $this->Html->script('jquery.min.js') ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
@@ -37,9 +37,13 @@ $cakeDescription = 'Generador de pruebas online';
 </head>
 <body>
     <div id="wrap">
+    <?php if(!is_null($role)): ?>
     <?php echo $this->element('navbar'); ?>
+    <?php else: ?>
+    <br><br><br>
+    <?php endif; ?>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div>
         <?= $this->fetch('content') ?>
     </div>
     </div>

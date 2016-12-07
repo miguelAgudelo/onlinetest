@@ -2,6 +2,7 @@
 namespace App\Controller;
 use Cake\Event\Event;
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -21,6 +22,8 @@ class UsersController extends AppController
     {
         parent::beforeFilter($event);
         $this->Auth->allow(['add', 'logout']);
+        $role=$this->Auth->user('role');
+        $this->set(compact('role'));
     }
 
     public function login()
@@ -65,6 +68,57 @@ class UsersController extends AppController
         $this->set('_serialize', ['user']);
     }
 
+     public function agregarmateria($id = null)
+    {
+        $user = $this->Users->get($id);
+        $Categorias = TableRegistry::get('Categorias');
+        if ($this->request->is('post')) {
+            $categoriausers = TableRegistry::get('Categoriausers');
+            $n=$this->request->data['numerador'];
+            $this->request->data['cantidad']=$this->request->data['numerador'];
+            $categoria=array();
+            $cantidad=array();
+            for ($i=1; $i <=$n ; $i++) {
+                array_push( $categoria, $this->request->data['categoria'.$i.'']);
+            }
+            for ($i=0; $i <$n ; $i++) { 
+                $sub=['user_id'=>$id,'categoria_id'=>$categoria[$i]];
+                $categoriauser= $categoriausers->newEntity($sub, ['validate' => false]);
+                $categoriausers->save($categoriauser);
+                       }
+
+                if($categoriausers->save($categoriauser)){$this->Flash->success(__('La asignacion ha sido completada'));
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    $this->Flash->error(__('No se pudo guardar'));
+
+                }
+        }
+        $categorias=$Categorias->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'categorias'));
+        $this->set('_serialize', ['user']);
+    }
+
+     public function retirarmateria($id = null)
+    {
+        $user = $this->Users->get($id);
+        $Categorias = TableRegistry::get('Categorias');
+        if ($this->request->is('ajax')) {
+            $categoriausers = TableRegistry::get('Categoriausers');
+            $categoria=$this->request->data['categoria'];
+            $categoriausers = TableRegistry::get('Categoriausers');
+            $categoriauser=$categoriausers->find()->where(['user_id'=>$this->Auth->user('id'),'categoria_id'=>$categoria])->first();
+            $categoriausers->delete($categoriauser);
+            $this->Flash->success(__('el retiro ha sido completada'));
+           
+        }
+        $categorias=$Categorias->find()->innerJoinWith('Categoriausers.Users',function($q) use ($id){
+            return $q->where(['Users.id'=>$id]);
+        });
+        $this->set(compact('user', 'categorias'));
+        $this->set('_serialize', ['user']);
+    }
+
     /**
      * Add method
      *
@@ -74,6 +128,7 @@ class UsersController extends AppController
     {
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
+            $this->request->data['role']='user';
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));

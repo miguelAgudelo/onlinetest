@@ -28,6 +28,9 @@
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $evaluacion->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $evaluacion->id]) ?>
+                    <?php if($role=='admin'): ?>
+                        <?= $this->Html->link(__('Resultados'), ['action' => 'veresultado', $evaluacion->id]) ?>
+                    <?php endif; ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $evaluacion->id], ['confirm' => __('Are you sure you want to delete # {0}?', $evaluacion->id)]) ?>
                 </td>
             </tr>
