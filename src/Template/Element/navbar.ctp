@@ -15,19 +15,27 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materias <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><?php echo $this->Html->link("Crear Categoria", ['controller'=>'categorias','action' =>'add']);?></li>
+            <li><?php echo $this->Html->link("Añadir Materias", ['controller'=>'categorias','action' =>'add']);?></li>
             <li><?php echo $this->Html->link("Agregar  Evaluaciones a Categoria", ['controller'=>'categorias','action' =>'add2']);?></li>
-            <li><?php echo $this->Html->link("Lista de Categorias", ['controller'=>'categorias']);?></li>
+            <li><?php echo $this->Html->link("Lista de Materias", ['controller'=>'categorias']);?></li>
           </ul>
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evaluaciones <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evaluaciones<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><?php echo $this->Html->link("Crear Evaluaciones", ['controller'=>'evaluacions','action' =>'add']);?></li>
             <li><?php echo $this->Html->link("Lista de Evaluaciones", ['controller'=>'evaluacions']);?></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Requisitos<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><?php echo $this->Html->link("Agregar Requisitos", ['controller'=>'requisitos','action' =>'add']);?></li>
+            <li><?php echo $this->Html->link("Lista de Requisitos", ['controller'=>'requisitos']);?></li>
           </ul>
         </li>
 
@@ -44,6 +52,12 @@
           <ul class="dropdown-menu">
            <li><?php echo $this->Html->link("Crear Respuestas", ['controller'=>'respuestas','action' =>'add']);?></li>
            <li><li><?php echo $this->Html->link("Lista de Respuestas", ['controller'=>'respuestas']);?></li></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuarios<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><?php echo $this->Html->link("Lista de Usuarios", ['controller'=>'users']);?></li>
           </ul>
         </li>
         <li class="dropdown">

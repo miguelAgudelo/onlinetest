@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container2">
     <?= $this->Form->create($evaluacion) ?>
     <fieldset>
         <legend><?= __('Crear Evaluacion') ?></legend>
@@ -24,7 +24,7 @@
              <div id="boton"></div>
             <div id="subcategorias"></div><br>  
     </fieldset>
-    <?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?>
+    <center><?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
 </div>
 <script type="text/javascript">

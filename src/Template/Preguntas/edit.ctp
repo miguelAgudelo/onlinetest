@@ -1,36 +1,30 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $pregunta->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $pregunta->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Preguntas'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Categoria'), ['controller' => 'Categorias', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Nivels'), ['controller' => 'Nivels', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Nivel'), ['controller' => 'Nivels', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Tipos'), ['controller' => 'Tipos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Tipo'), ['controller' => 'Tipos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Evaluacionpreguntas'), ['controller' => 'Evaluacionpreguntas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Evaluacionpregunta'), ['controller' => 'Evaluacionpreguntas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Respuestas'), ['controller' => 'Respuestas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Respuesta'), ['controller' => 'Respuestas', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="preguntas form large-9 medium-8 columns content">
+
+<div class="container2">
     <?= $this->Form->create($pregunta) ?>
     <fieldset>
-        <legend><?= __('Edit Pregunta') ?></legend>
-        <?php
-            echo $this->Form->input('texto');
-            echo $this->Form->input('photo');
-            echo $this->Form->input('dir');
-            echo $this->Form->input('categoria_id', ['options' => $categorias]);
-        ?>
+        <legend><?= __('Editar Pregunta') ?></legend>
+       <div class="form-group">
+        <label for="texto">Contenido de la pregunta</label>
+        <?= $this->Form->input('texto',['label'=>'','class'=>"form-control"]); ?>
+        </div>
+        <label for="categoria-id">¿Elija la categoria?</label>
+        <?= $this->Form->input('categoria_id', ['options' => $categorias,'label'=>'','class'=>"form-control"]); ?>
+        <div class="form-group">
+        <label for="nivel">¿Elija el nivel?</label>
+        <?= $this->Form->input('nivel', ['options' => [1=>'facil',2=>'medio',3=>'dificil'],'label'=>'','class'=>"form-control"]); ?>
+        </div>
+        <div class="form-group">
+        <label for="tipo">¿Tipo de pregunta?</label>
+        <?= $this->Form->input('tipo', ['options' => [1=>'seleccion simple'],'label'=>'','class'=>"form-control"]);  ?>
+        </div>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <center><?= $this->Form->button('Actualizar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
 </div>
+<script type="text/javascript">
+    $(document).on('ready',function(){
+       
+        $('#categoria-id').select2();
+        
+    });
+</script>

@@ -1,5 +1,4 @@
-<div class="container-fluid">
-	<div class="users view large-9 medium-8 columns content">
+<div class="container2">
     <h3>Agregar Materias para evaluar a <?= h($user->nombre) ?> <?= h($user->apellido) ?></h3>
     <table class="table table-striped">
     	
@@ -20,15 +19,17 @@
     </table>
     
      <?php $c=0; ?>
+     <div class="col-md-12">
       <?php foreach ($categorias as $categoria): ?>
-          <div class="col-md-6">
             <div class="checkbox">
               <label><input type="checkbox" value="<?php echo $categoria->id ?>" name="categoria<?php echo $c; ?>" id="categoria<?php echo $c; ?>"><?= $categoria->nombre  ?></label>
             </div>
-          </div>
+          
           <?php $c++; ?>
       <?php endforeach ?>
-      <input type="hidden" name="numerador" value="<?php echo $c; ?>" id="numerador">     
+      </div>
+      <input type="hidden" name="numerador" value="<?php echo $c; ?>" id="numerador">
+      <br>     
       <center><?= $this->Form->button('Retirar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     
 </div>

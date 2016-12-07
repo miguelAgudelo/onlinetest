@@ -88,8 +88,7 @@ class RespuestasController extends AppController
             }
         }
         $preguntas = $this->Respuestas->Preguntas->find('list', ['limit' => 200]);
-        $tipos = $this->Respuestas->Tipos->find('list', ['limit' => 200]);
-        $this->set(compact('respuesta', 'preguntas', 'tipos'));
+        $this->set(compact('respuesta', 'preguntas'));
         $this->set('_serialize', ['respuesta']);
     }
 

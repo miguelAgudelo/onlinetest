@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container2">
     <?= $this->Form->create($pregunta) ?>
     <fieldset>
         <legend><?= __('Crear Pregunta') ?></legend>
@@ -24,9 +24,10 @@
              <div id="boton"></div>
             <div id="subcategorias"></div>  
     </fieldset>
-     <?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?>
+     <center><?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?><br>
 </div>
+<br>
 <script type="text/javascript">
     $(document).on('ready',function(){
         var c=0

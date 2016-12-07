@@ -1,9 +1,9 @@
-<div class="container-fluid">
+<div class="container2">
     <?= $this->Form->create($categoria) ?>
     <fieldset>
-        <legend><?= __('Crear Categoria') ?></legend>
+        <legend><?= __('Añadir Materia') ?></legend>
         <div class="form-group">
-            <label for="nombre">Nombre de la categoria</label>
+            <label for="nombre">Nombre de la materia</label>
             <?= $this->Form->input('nombre',['label'=>'','class'=>"form-control"]); ?>
          </div>
          <div class="form-group">
@@ -15,7 +15,7 @@
              <div id="boton"></div>
             <div id="subcategorias"></div><br>  
     </fieldset>
-    <?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?>
+    <center><?= $this->Form->button('Guardar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
     <br>
 </div>

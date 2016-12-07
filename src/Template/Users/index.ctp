@@ -1,8 +1,7 @@
-
-<div class="container-fluid">
+<div class="container1">
     <center><h3><?= __('Usuarios') ?></h3></center>
-    <table class="table table-striped">
-        <thead>
+    <table  id="mitabla">
+        <thead id="mith">
             <tr>
                
                 <th><?= $this->Paginator->sort('nombre') ?></th>
@@ -10,12 +9,12 @@
                 <th><?= $this->Paginator->sort('cedula') ?></th>
                 <th><?= $this->Paginator->sort('username') ?></th>
                 <th><?= $this->Paginator->sort('email') ?></th>
-                <th><?= $this->Paginator->sort('created') ?></th>
+                <th><?= $this->Paginator->sort('Ingreso') ?></th>
                
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="mitb">
             <?php foreach ($users as $user): ?>
             <tr>
                 
@@ -28,11 +27,21 @@
                 <td><?= h($user->email) ?></td>
                 <td><?= h($user->created) ?></td>
                
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $user->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $user->id]) ?>
-                    <?= $this->Html->link(__('Adiccionar Materias'), ['action' => 'agregarmateria', $user->id]) ?>
-                    <?= $this->Html->link(__('Retirar Materias'), ['action' => 'retirarmateria', $user->id]) ?>
+                <td class="actions"> 
+
+                   <?= $this->Html->link(__('Ver'), ['action' => 'view',$user->id],['class' => 'btn btn-sm btn-info']) ?> 
+
+
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $user->id],['class' => 'btn btn-sm btn-info']) ?>  
+
+
+                    <?= $this->Html->link(__('Adiccionar Materias'), ['action' => 'agregarmateria', $user->id],['class' => 'btn btn-sm btn-info']) ?> 
+
+
+
+
+                    <?= $this->Html->link(__('Retirar Materias'), ['action' => 'retirarmateria', $user->id],['class' => 'btn btn-sm btn-info']) ?> 
+
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -40,9 +49,9 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('Proximo') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>

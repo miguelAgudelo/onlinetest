@@ -1,28 +1,35 @@
 
-<div class="container-fluid">
+<div class="container1">
     <center><h3><?= __('Categorias') ?></h3></center>
-    <br>
-    <table class="table table-striped">
-        <thead>
+    <table  id="mitabla">
+          <thead id="mith">
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('nombre') ?></th>
-                <th><?= $this->Paginator->sort('created') ?></th>
-                <th><?= $this->Paginator->sort('modified') ?></th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th><?= $this->Paginator->sort('creada') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="mitb">
             <?php foreach ($categorias as $categoria): ?>
             <tr>
-                <td><?= $this->Number->format($categoria->id) ?></td>
+               
                 <td><?= h($categoria->nombre) ?></td>
-                <td><?= h($categoria->created) ?></td>
                 <td><?= h($categoria->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $categoria->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $categoria->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $categoria->id], ['confirm' => __('Are you sure you want to delete # {0}?', $categoria->id)]) ?>
+                <td class="actions"> 
+ 
+
+                     <?= $this->Html->link(__('Ver'), ['action' => 'view',$categoria->id],['class' => 'btn btn-sm btn-info']) ?>  
+
+
+
+                      <?= $this->Html->link(__('Editar'), ['action' => 'edit', $categoria->id],['class' => 'btn btn-sm btn-info']) ?>    
+
+
+
+                   <?php echo $this->Form->postLink(__('<i class="fa fa-trash">Eliminar</i>'), array('action' => 'delete', $categoria->id), array('class' => 'btn btn-sm btn-success', 'escape' => false, 'button title' => 'ELIMINAR'), array('confirm' => __('Are you sure you want to delete # {0}?', $categoria->id))); ?>  
+
+
+                    
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -30,10 +37,11 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
 </div>
+

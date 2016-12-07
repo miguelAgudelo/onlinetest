@@ -37,8 +37,10 @@ $cakeDescription = 'Generador de pruebas online';
 </head>
 <body>
     <div id="wrap">
-    <?php if(!is_null($role)): ?>
+    <?php if($role=="admin"): ?>
     <?php echo $this->element('navbar'); ?>
+    <?php elseif($role=="user"): ?>
+    <?php echo $this->element('navbar2'); ?>
     <?php else: ?>
     <br><br><br>
     <?php endif; ?>

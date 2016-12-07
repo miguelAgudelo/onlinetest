@@ -1,5 +1,5 @@
-<div class="container-fluid">
-	<div class="users view large-9 medium-8 columns content">
+<div class="container2">
+	
     <h3>Agregar Materias para evaluar a <?= h($user->nombre) ?> <?= h($user->apellido) ?></h3>
     <table class="table table-striped">
     	
@@ -30,6 +30,7 @@
             <center><?= $this->Form->button('Agregar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
            <?= $this->Form->end() ?>
 </div>
+<br><br><br><br>
 <script type="text/javascript">
     $(document).on('ready',function(){
         

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container2">
 	<center><h4>Resultados de la evaluacion <?= $evaluacion->nombre ?></h4></center>
 	<?php foreach ($notas as $user): ?>
 		<?php  $total=0; ?>
@@ -23,7 +23,9 @@
 			<tr>
 				<td>Nota Total: <?= round($total) ?>
 					<?php if(round($total)>=55): ?>
+						<img src="../../img/chulo.png">
 					<?php else: ?> ?>
+						<img src="../../img/chulomalo.png">
 					<?php endif; ?>
 				</td>
 			</tr>

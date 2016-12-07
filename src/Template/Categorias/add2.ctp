@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container2">
     <?= $this->Form->create($categoria) ?>
     <fieldset>
-        <legend><?= __('Crear Categoria') ?></legend>
+        <legend><?= __('Añadir evaluaciones a materia') ?></legend>
         <div class="form-group">
             <?= $this->Form->input('categoria_id',['label'=>'','options'=>$cate]); ?>
          </div>
@@ -32,7 +32,7 @@
                    var cant=$('#cant').val();
                     for (var j =1; j<=cant; j++) {
                          c=c+1
-                         $('#subcategorias').append( "<div id='mycontenido"+c+"'><div class='form-group'><label for='evaluacion'>Nombre de la evaluacion</label><input type='text' name='eva"+c+"' id='eva"+c+"' class='form-control'><label for='ponderada'>¿Es una evaluacion ponderada?</label><select  name='pon"+c+"' id='pon"+c+"' class='form-control'><option value='No'>No</option><option value='Si'>Si</option></select><label for='cuantas'>¿Cuantas preguntas contendra la evaluacion?</label><input type='number' name='ca"+c+"' id='ca"+c+"' class='form-control'></div></div><br>" )
+                         $('#subcategorias').append( "<div id='mycontenido"+c+"'><div class='form-group'><label for='evaluacion'>Nombre de la evaluacion</label><input type='text' name='eva"+c+"' id='eva"+c+"' class='form-control'><label for='ponderada'>¿Es una evaluacion ponderada?</label><select  name='pon"+c+"' id='pon"+c+"' class='form-control'><option value='No'>No</option><option value='Si'>Si</option></select></div><br>" )
                          $("#mycontenido"+c+"").css(
                             { "padding": "20px",
                               "margin-top": "10px",

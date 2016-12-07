@@ -1,4 +1,4 @@
-<div class="container-fluid" id="micuadro">
+<div class="container2" id="micuadro">
 
     <h3><?= $evaluacion[0]->nombre ?></h3>
     <?= $this->Form->input('evaluacion', ['id'=>'evaluacion','type'=>'hidden','value'=>$evaluacion[0]->id]); ?>

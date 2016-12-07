@@ -89,15 +89,12 @@ class CategoriasController extends AppController
             $categoria_id=$this->request->data['categoria_id'];
             $nombre=array();
             $ponderada=array();
-            $cantidad=array();
             for ($i=1; $i <=$n ; $i++) {
                 array_push( $nombre, $this->request->data['eva'.$i.""]);
                 array_push( $ponderada, $this->request->data['pon'.$i.""]);
-                array_push( $cantidad, $this->request->data['ca'.$i.""]);
             }
             for ($i=0; $i <$n ; $i++) { 
-                       $sub=['nombre'=>$nombre[$i],'ponderada'=>$ponderada[$i],
-                       'cantidad'=>$cantidad[$i],'categoria_id'=>$categoria_id];
+                       $sub=['nombre'=>$nombre[$i],'ponderada'=>$ponderada[$i],'categoria_id'=>$categoria_id];
                        $evaluacion= $evaluacions->newEntity($sub, ['validate' => true]);
                        $evaluacions->save($evaluacion);
                    }

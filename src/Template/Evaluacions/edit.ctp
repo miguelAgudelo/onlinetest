@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container2">
     <?= $this->Form->create($evaluacion) ?>
     <fieldset>
         <legend><?= __('Editar la Evaluacion') ?></legend>
@@ -18,7 +18,7 @@
             
       
     </fieldset>
-    <?= $this->Form->button('Actualizar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?>
+    <center><?= $this->Form->button('Actualizar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
 </div>
 <script type="text/javascript">

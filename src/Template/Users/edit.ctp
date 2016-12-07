@@ -1,33 +1,44 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $user->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Presentados'), ['controller' => 'Presentados', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Presentado'), ['controller' => 'Presentados', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="users form large-9 medium-8 columns content">
+
+<div class="container2">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Edit User') ?></legend>
-        <?php
-            echo $this->Form->input('nombre');
-            echo $this->Form->input('apellido');
-            echo $this->Form->input('cedula');
-            echo $this->Form->input('sexo');
-            echo $this->Form->input('direccion');
-            echo $this->Form->input('username');
-            echo $this->Form->input('password');
-            echo $this->Form->input('email');
-            echo $this->Form->input('role');
-        ?>
+        <center><legend><?= __('Editar Usuario') ?></legend></center>
+        <div class="form-group">
+        <label for="nombre">Nombre</label>
+           <?= $this->Form->input('nombre',['class'=>"form-control",'label'=>'']) ?>
+        </div> 
+        <div class="form-group">
+        <label for="apellido">Apellido</label>
+           <?= $this->Form->input('apellido',['class'=>"form-control",'label'=>'']) ?>
+        </div>
+        <div class="form-group">
+        <label for="cedula">Cedula</label> 
+         <?= $this->Form->input('cedula',['type'=>'number','class'=>"form-control",'label'=>'']) ?>
+        </div>
+        <div class="form-group">
+        <label for="sexo">Genero</label> 
+            <?= $this->Form->input('sexo',['options'=>['Masculino'=>'Masculino','Femenino'=>'Femenino'],'class'=>"form-control",'label'=>'']) ?>
+        </div>
+        <div class="form-group">
+        <label for="direccion">Direccion</label>
+            <?= $this->Form->textarea('direccion',['type'=>'texarea','class'=>"form-control",'label'=>'','rows' => '5', 'cols' => '5'])?>
+        </div>
+        <div class="form-group">
+        <label for="username">Nombre de Usuario</label>
+            <?= $this->Form->input('username',['class'=>"form-control",'label'=>''])?>
+        </div>
+        <center><div id="error2"></div></center>
+        <div class="form-group">
+        <label for="email">Correo</label>
+            <?= $this->Form->input('email',['class'=>"form-control",'label'=>''])?>
+        </div>
+        <div class="form-group">
+        <label for="Role">Estudiante o Profesor</label>
+            <?= $this->Form->input('role',['class'=>"form-control",'label'=>'','options'=>['user'=>'Estudiante','admin'=>'Profesor','superadmin'=>'Administrador']])?>
+        </div>            
+       
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <center><?= $this->Form->button('Actualizar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
 </div>
+<br>

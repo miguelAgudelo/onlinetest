@@ -1,22 +1,27 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Requisitos'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Evaluacions'), ['controller' => 'Evaluacions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Evaluacion'), ['controller' => 'Evaluacions', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="requisitos form large-9 medium-8 columns content">
+<div class="container2">
     <?= $this->Form->create($requisito) ?>
     <fieldset>
-        <legend><?= __('Add Requisito') ?></legend>
-        <?php
-            echo $this->Form->input('evaluacion_id', ['options' => $evaluacions]);
-            echo $this->Form->input('nivel');
-            echo $this->Form->input('tipo');
-            echo $this->Form->input('cantidad');
-        ?>
+        <legend><?= __('Agregar Requisito a una evaluación') ?></legend>
+        <div class="form-group">        
+            <?= $this->Form->input('evaluacion_id', ['options' => $evaluacions,'label'=>'¿A que evaluacion pertenece?','class'=>"form-control" ]); ?>
+        </div>
+        <div class="form-group"> 
+            <?= $this->Form->input('nivel',['options' => [1=>'facil',2=>'medio',3=>'dificil'],'label'=>'Nivel de dificultad','class'=>"form-control"]); ?>
+        </div>
+        <div class="form-group"> 
+            <?= $this->Form->input('tipo',['options' => [1=>'seleccion simple'],'label'=>'Tipo de pregunta','class'=>"form-control"]); ?>
+        </div>
+        <div class="form-group"> 
+            <?= $this->Form->input('cantidad',['label'=>'Cantidad','class'=>"form-control" ]); ?>
+        </div>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <center><?= $this->Form->button('Agregar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
     <?= $this->Form->end() ?>
 </div>
+<script type="text/javascript">
+     $(document).on('ready',function(){
+       
+        $('#evaluacion-id').select2();
+        
+    });
+</script>

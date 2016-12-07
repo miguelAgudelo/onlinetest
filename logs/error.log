@@ -10357,3 +10357,354 @@ Stack Trace:
 #1 {main}
 
 
+2016-12-07 03:25:16 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "evaluacions" with primary key [NULL]
+Request URL: /pruebaonline3/evaluacions/veresultado
+Referer URL: http://localhost/pruebaonline3/
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\src\Controller\EvaluacionsController.php(135): Cake\ORM\Table->get(Array)
+#1 [internal function]: App\Controller\EvaluacionsController->veresultado()
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-12-07 03:36:47 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 03:36:54 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 03:37:09 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "evaluacions"
+Request URL: /pruebaonline3/evaluacions/veresultado/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\pruebaonline3\src\Controller\EvaluacionsController.php(135): Cake\ORM\Table->get(Array)
+#2 [internal function]: App\Controller\EvaluacionsController->veresultado('img', 'chulo.png')
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#6 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-12-07 03:37:16 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "evaluacions"
+Request URL: /pruebaonline3/evaluacions/veresultado/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\pruebaonline3\src\Controller\EvaluacionsController.php(135): Cake\ORM\Table->get(Array)
+#2 [internal function]: App\Controller\EvaluacionsController->veresultado('img', 'chulo.png')
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#6 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-12-07 03:37:31 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 03:37:36 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 03:37:51 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 03:37:56 Error: [Cake\Controller\Exception\MissingActionException] Action EvaluacionsController::img() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EvaluacionsController',
+  'action' => 'img',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /pruebaonline3/evaluacions/img/chulo.png
+Referer URL: http://localhost/pruebaonline3/evaluacions/veresultado/7
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EvaluacionsController))
+#2 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-12-07 04:08:11 Warning: Warning (2): session_regenerate_id(): Session object destruction failed.  ID: files (path: C:\xampp\tmp) in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Network\Session.php, line 576]
+Request URL: /pruebaonline3/users/logout
+Referer URL: http://localhost/pruebaonline3/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+session_regenerate_id - [internal], line ??
+Cake\Network\Session::renew() - CORE\src\Network\Session.php, line 576
+Cake\Auth\Storage\SessionStorage::delete() - CORE\src\Auth\Storage\SessionStorage.php, line 117
+Cake\Controller\Component\AuthComponent::logout() - CORE\src\Controller\Component\AuthComponent.php, line 652
+App\Controller\UsersController::logout() - APP/Controller\UsersController.php, line 47
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 04:08:31 Warning: Warning (2): session_regenerate_id(): Session object destruction failed.  ID: files (path: C:\xampp\tmp) in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Network\Session.php, line 576]
+Request URL: /pruebaonline3/users/logout
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+session_regenerate_id - [internal], line ??
+Cake\Network\Session::renew() - CORE\src\Network\Session.php, line 576
+Cake\Auth\Storage\SessionStorage::delete() - CORE\src\Auth\Storage\SessionStorage.php, line 117
+Cake\Controller\Component\AuthComponent::logout() - CORE\src\Controller\Component\AuthComponent.php, line 652
+App\Controller\UsersController::logout() - APP/Controller\UsersController.php, line 47
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 04:09:35 Error: [ParseError] syntax error, unexpected '(', expecting ';'
+Request URL: /pruebaonline3/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#5 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-12-07 04:09:58 Error: [ParseError] syntax error, unexpected '(', expecting ';'
+Request URL: /pruebaonline3/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#5 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-12-07 04:10:54 Error: [ParseError] syntax error, unexpected '(', expecting ';'
+Request URL: /pruebaonline3/users/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#5 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-12-07 15:02:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 15:02:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 15:03:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 15:04:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 15:09:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 15:10:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /pruebaonline3/css/bootstrap.min.css.map
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-12-07 16:16:01 Error: [RuntimeException] Table "App\Model\Table\RespuestasTable" is not associated with "Tipos"
+Request URL: /pruebaonline3/respuestas/edit/1
+Referer URL: http://localhost/pruebaonline3/respuestas
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\src\Controller\RespuestasController.php(91): Cake\ORM\Table->__get('Tipos')
+#1 [internal function]: App\Controller\RespuestasController->edit('1')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RespuestasController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-12-07 17:18:29 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /pruebaonline3/requisitos/add
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RequisitosController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-12-07 17:33:59 Error: [TypeError] Argument 1 passed to Cake\ORM\Table::save() must implement interface Cake\Datasource\EntityInterface, null given, called in C:\xampp\htdocs\pruebaonline3\src\Controller\UsersController.php on line 94
+Request URL: /pruebaonline3/users/agregarmateria/2
+Referer URL: http://localhost/pruebaonline3/users/agregarmateria/2
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\src\Controller\UsersController.php(94): Cake\ORM\Table->save(NULL)
+#1 [internal function]: App\Controller\UsersController->agregarmateria('2')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-12-07 17:53:00 Error: [ParseError] syntax error, unexpected 'class' (T_CLASS), expecting ']'
+Request URL: /pruebaonline3/requisitos
+Referer URL: http://localhost/pruebaonline3/users
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RequisitosController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-12-07 17:53:33 Error: [ParseError] syntax error, unexpected 'class' (T_CLASS), expecting ']'
+Request URL: /pruebaonline3/requisitos
+Referer URL: http://localhost/pruebaonline3/users
+Stack Trace:
+#0 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('C:\\xampp\\htdocs...', Array)
+#1 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\View\View.php(587): Cake\View\View->_render('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#3 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\RequisitosController))
+#5 C:\xampp\htdocs\pruebaonline3\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+

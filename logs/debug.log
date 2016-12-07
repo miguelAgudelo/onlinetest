@@ -35210,3 +35210,42 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-12-07 15:22:04 Notice: Notice (8): Undefined index: ca1 in [C:\xampp\htdocs\pruebaonline3\src\Controller\CategoriasController.php, line 96]
+Request URL: /pruebaonline3/categorias/add2
+Referer URL: http://localhost/pruebaonline3/categorias/add2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\CategoriasController::add2() - APP/Controller\CategoriasController.php, line 96
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 15:22:04 Notice: Notice (8): Undefined index: ca2 in [C:\xampp\htdocs\pruebaonline3\src\Controller\CategoriasController.php, line 96]
+Request URL: /pruebaonline3/categorias/add2
+Referer URL: http://localhost/pruebaonline3/categorias/add2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\CategoriasController::add2() - APP/Controller\CategoriasController.php, line 96
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 17:33:59 Notice: Notice (8): Undefined variable: categoriauser in [C:\xampp\htdocs\pruebaonline3\src\Controller\UsersController.php, line 94]
+Request URL: /pruebaonline3/users/agregarmateria/2
+Referer URL: http://localhost/pruebaonline3/users/agregarmateria/2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\UsersController::agregarmateria() - APP/Controller\UsersController.php, line 94
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+

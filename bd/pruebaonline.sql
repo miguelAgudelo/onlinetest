@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-12-2016 a las 03:05:16
+-- Tiempo de generación: 07-12-2016 a las 19:09:05
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 7.0.9
 
@@ -98,6 +98,15 @@ CREATE TABLE `evaluacionpreguntas` (
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `evaluacionpreguntas`
+--
+
+INSERT INTO `evaluacionpreguntas` (`id`, `evaluacion_id`, `pregunta_id`, `user_id`, `ponderacion`, `created`, `modified`) VALUES
+(1, 7, 1, 1, 33.3333, '2016-12-07 03:27:17', '2016-12-07 03:27:17'),
+(2, 7, 6, 1, 33.3333, '2016-12-07 03:27:17', '2016-12-07 03:27:17'),
+(3, 7, 5, 1, 33.3333, '2016-12-07 03:27:17', '2016-12-07 03:27:17');
+
 -- --------------------------------------------------------
 
 --
@@ -119,9 +128,11 @@ CREATE TABLE `evaluacions` (
 --
 
 INSERT INTO `evaluacions` (`id`, `nombre`, `ponderada`, `contiempo`, `categoria_id`, `created`, `modified`) VALUES
-(7, 'Prueba corta 4', 'No', NULL, 1, '2016-11-17 05:34:51', '2016-11-29 20:57:12'),
-(9, 'Prueba Larga1', 'Si', NULL, 1, '2016-11-21 04:48:20', '2016-11-21 04:48:20'),
-(10, 'Prueba de practica de principios de la informatica', 'No', NULL, 5, '2016-11-24 02:24:03', '2016-11-24 02:24:03');
+(7, 'Prueba corta IV', 'No', NULL, 1, '2016-11-17 05:34:51', '2016-12-07 14:47:30'),
+(9, 'Prueba Larga I', 'Si', NULL, 1, '2016-11-21 04:48:20', '2016-12-07 14:48:28'),
+(10, 'Prueba de practica de principios de la informatica', 'No', NULL, 5, '2016-11-24 02:24:03', '2016-11-24 02:24:03'),
+(11, 'Prueba sobre teoria de sistemas 1', 'No', NULL, 2, '2016-12-07 15:22:04', '2016-12-07 15:22:04'),
+(12, 'Prueba sobre teoria de sistemas 2', 'No', NULL, 2, '2016-12-07 15:22:04', '2016-12-07 15:22:04');
 
 -- --------------------------------------------------------
 
@@ -146,12 +157,12 @@ CREATE TABLE `preguntas` (
 --
 
 INSERT INTO `preguntas` (`id`, `texto`, `photo`, `dir`, `categoria_id`, `nivel`, `tipo`, `created`, `modified`) VALUES
-(1, 'Que es POO', NULL, NULL, 1, 1, 1, '2016-11-06 23:53:31', '2016-11-06 23:53:31'),
-(3, 'Que es Java?', NULL, NULL, 1, 1, 1, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
+(1, '¿Que es POO?', NULL, NULL, 1, 1, 1, '2016-11-06 23:53:31', '2016-11-06 23:53:31'),
+(3, '¿Que es Java?', NULL, NULL, 1, 1, 1, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
 (4, 'Describa el significado de MVC', NULL, NULL, 1, 2, 1, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
 (5, 'Explique la labor de un desarrollador de frond - end', NULL, NULL, 1, 1, 1, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
-(6, 'QUes es back-end?', NULL, NULL, 1, 1, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
-(8, 'Que es computadora?', NULL, NULL, 5, 1, 1, '2016-11-24 02:22:17', '2016-11-24 02:22:17'),
+(6, '¿Ques es back-end?', NULL, NULL, 1, 1, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
+(8, '¿Que es una computadora?', NULL, NULL, 5, 1, 1, '2016-11-24 02:22:17', '2016-11-24 02:22:17'),
 (9, 'Historia del computador', NULL, NULL, 5, 1, 1, '2016-11-24 02:23:34', '2016-11-24 02:23:34');
 
 -- --------------------------------------------------------
@@ -168,6 +179,13 @@ CREATE TABLE `presentados` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `presentados`
+--
+
+INSERT INTO `presentados` (`id`, `user_id`, `evaluacion_id`, `presenta`, `created`, `modified`) VALUES
+(1, 1, 7, 2, '2016-12-07 03:27:16', '2016-12-07 03:27:16');
 
 -- --------------------------------------------------------
 
@@ -218,16 +236,16 @@ CREATE TABLE `respuestas` (
 
 INSERT INTO `respuestas` (`id`, `pregunta_id`, `texto`, `photo`, `dir`, `correcta`, `created`, `modified`) VALUES
 (1, 1, 'Programacion orientada a objetos', NULL, NULL, 1, '2016-11-06 23:53:31', '2016-11-06 23:53:31'),
-(2, 1, 'Un burrito espacial', NULL, NULL, 0, '2016-11-06 23:53:32', '2016-11-06 23:53:32'),
+(2, 1, 'Es un lenguaje de programación para aplicaciones moviles', NULL, NULL, 0, '2016-11-06 23:53:32', '2016-11-06 23:53:32'),
 (5, 3, 'Un lenguaje de programación ', NULL, NULL, 1, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
-(6, 3, 'Un perrito', NULL, NULL, 0, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
+(6, 3, 'Es una plataforma de ventas para paginas web', NULL, NULL, 0, '2016-11-07 04:09:52', '2016-11-07 04:09:52'),
 (7, 4, 'Modelo-Vista-Controlador', NULL, NULL, 1, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
-(8, 4, 'Malvado villano coreano', NULL, NULL, 0, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
-(11, 5, 'Se encarga de vender empanadas', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
+(8, 4, 'Framework de diseño web', NULL, NULL, 0, '2016-11-07 04:11:17', '2016-11-07 04:11:17'),
+(11, 5, 'Es el encargado de la gestion de base de datos', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (12, 5, 'Se encarga de pasear a los perros', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
-(13, 5, 'Es un gilberto', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
+(13, 5, 'Es una arquitectura de software', NULL, NULL, 0, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
 (14, 5, 'Es el encargado de desarrollar toda la parte que ve el cliente en un proyecto', NULL, NULL, 1, '2016-11-21 02:54:19', '2016-11-21 02:54:19'),
-(15, 6, 'Es donde se guardan todas las cosas de las pc en mantenimiento', NULL, NULL, 0, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
+(15, 6, 'Es donde se guardan todos los datos de una pc en mantenimiento', NULL, NULL, 0, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
 (16, 6, 'Es el la parte de desarrollo orientada al servidor', NULL, NULL, 1, '2016-11-21 02:55:46', '2016-11-21 02:55:46'),
 (17, 7, 'Una maquina de algoritmica', NULL, NULL, 1, '2016-11-24 02:21:18', '2016-11-24 02:21:18'),
 (18, 7, 'una cosa', NULL, NULL, 0, '2016-11-24 02:21:18', '2016-11-24 02:21:18'),
@@ -251,6 +269,15 @@ CREATE TABLE `resultados` (
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `resultados`
+--
+
+INSERT INTO `resultados` (`id`, `evaluacionpregunta_id`, `respuesta_id`, `correcta`, `puntos`, `created`, `modified`) VALUES
+(1, 1, 1, 1, 33.3333, '2016-12-07 03:32:31', '2016-12-07 03:32:31'),
+(2, 3, 14, 1, 33.3333, '2016-12-07 03:32:33', '2016-12-07 03:32:33'),
+(3, 2, 16, 1, 33.3333, '2016-12-07 03:32:34', '2016-12-07 03:32:34');
 
 -- --------------------------------------------------------
 
@@ -279,7 +306,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `nombre`, `apellido`, `cedula`, `sexo`, `direccion`, `username`, `password`, `email`, `role`, `created`, `modified`) VALUES
 (1, 'Miguel', 'Agudelo', 23423654, 'masculino', 'la torre cuatricentenaria', 'miguelhxc', '$2y$10$XAlNsh0YAlnqv4D2bi1xq.VBT7Wg7Y7D5v5KdPTNBiGCnrqD0Q2f2', 'miguelhxc37@gmail.com', 'admin', '2016-11-21 02:47:48', '2016-11-21 02:47:48'),
-(2, 'Gilberto', 'tonto', 25412345, 'Masculino', 'Por donde vive gilberto', 'soygilberto', '$2y$10$vsMOdd6GdDdwzFCwfc0nw.Kj4e5jfVk4cjvjH6uvk396c4hTm5X2S', 'soygilberto@gmail.com', 'user', '2016-12-05 04:19:09', '2016-12-05 04:19:09');
+(2, 'Gilberto', 'tonto', 25412345, 'Masculino', 'Por donde vive gilberto', 'soygilberto', '$2y$10$vsMOdd6GdDdwzFCwfc0nw.Kj4e5jfVk4cjvjH6uvk396c4hTm5X2S', 'soygilberto@gmail.com', 'user', '2016-12-05 04:19:09', '2016-12-05 04:19:09'),
+(3, 'Profesor', 'Profesor', 4444541, 'Masculino', 'La casa del profesor', 'profesor', '$2y$10$tF7QUL8qLjomHDVTuz4y..Ly7LfptpkZNxshcadDRNJZ0urQ8xig6', 'profesor@escuela.com', 'admin', '2016-12-07 14:45:51', '2016-12-07 14:46:51');
 
 --
 -- Índices para tablas volcadas
@@ -375,12 +403,12 @@ ALTER TABLE `categoriausers`
 -- AUTO_INCREMENT de la tabla `evaluacionpreguntas`
 --
 ALTER TABLE `evaluacionpreguntas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `evaluacions`
 --
 ALTER TABLE `evaluacions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `preguntas`
 --
@@ -390,7 +418,7 @@ ALTER TABLE `preguntas`
 -- AUTO_INCREMENT de la tabla `presentados`
 --
 ALTER TABLE `presentados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `requisitos`
 --
@@ -405,12 +433,12 @@ ALTER TABLE `respuestas`
 -- AUTO_INCREMENT de la tabla `resultados`
 --
 ALTER TABLE `resultados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

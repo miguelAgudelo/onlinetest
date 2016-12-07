@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container2">
     <h3><?= h($evaluacion->nombre) ?></h3>
     <br>
     <table class="table">
@@ -11,11 +11,11 @@
             <td><?= h($evaluacion->ponderada) ?></td>
         </tr>
         <tr>
-            <th><?= __('Categoria ') ?></th>
+            <th><?= __('Materia ') ?></th>
             <td><?= $evaluacion->has('categoria') ? h($evaluacion->categoria->nombre) : '' ?></td>
         </tr>
         <tr>
-            <th><?= __('Created') ?></th>
+            <th><?= __('Creada') ?></th>
             <td><?= h($evaluacion->created) ?></td>
         </tr>
     </table>
@@ -23,7 +23,7 @@
          <center><?= $this->Form->button('Realizar',['id'=>'realizar','class'=>'btn btn-primary']) ?></center>  
          <?= $this->Form->input('evaluacion_id', ['value'=>$evaluacion->id,'type'=>'hidden']); ?>
         <?php else: ?>
-        <center><h5>Ya usted ha presentado esta prueba</h5></center>
+        <center><div class="yapresentado"><h5>Ya usted ha presentado esta prueba</h5></div></center>
         <?php endif; ?>
     </div>
 

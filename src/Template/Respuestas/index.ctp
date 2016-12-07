@@ -1,31 +1,46 @@
 
-<div class="container-fluid">
+<div class="container1">
     <center><h3><?= __('Respuestas') ?></h3></center>
-    <table  class="table table-striped">
-        <thead>
+    <table  id="mitabla">
+        <thead id="mith">
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
+               
                 <th><?= $this->Paginator->sort('pregunta') ?></th>
                 <th><?= $this->Paginator->sort('texto') ?></th>
                 <th><?= $this->Paginator->sort('correcta') ?></th>
                 <th><?= $this->Paginator->sort('creada') ?></th>
                
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Acciones') ?></th>
             </tr>
         </thead>
-        <tbody>
+         <tbody id="mitb">
             <?php foreach ($respuestas as $respuesta): ?>
             <tr>
-                <td><?= $this->Number->format($respuesta->id) ?></td>
+                
                 <td><?= $respuesta->has('pregunta') ? $this->Html->link($respuesta->pregunta->texto, ['controller' => 'Preguntas', 'action' => 'view', $respuesta->pregunta->id]) : '' ?></td>
                 <td><?= h($respuesta->texto) ?></td>
-                <td><?= h($respuesta->correcta) ?></td>
+                <td><?php if($respuesta->correcta==1){echo "correcta";}else{ echo "incorrecta";} ?></td>
                 <td><?= h($respuesta->created) ?></td>
                 
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $respuesta->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $respuesta->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $respuesta->id], ['confirm' => __('Are you sure you want to delete # {0}?', $respuesta->id)]) ?>
+                <td class="actions"> 
+
+
+
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view',$respuesta->id],['class' => 'btn btn-sm btn-info']) ?> 
+
+
+
+
+
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $respuesta->id],['class' => 'btn btn-sm btn-info']) ?> 
+
+
+
+
+                   <?php echo $this->Form->postLink(__('<i class="fa fa-trash">Eliminar</i>'), array('action' => 'delete', $respuesta->id), array('class' => 'btn btn-sm btn-success', 'escape' => false, 'button title' => 'ELIMINAR'), array('confirm' => __('Are you sure you want to delete # {0}?', $respuesta->id))); ?>  
+
+
+
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -33,9 +48,9 @@
     </table>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->prev('< ' . __('Anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
+            <?= $this->Paginator->next(__('Siguiente') . ' >') ?>
         </ul>
         <p><?= $this->Paginator->counter() ?></p>
     </div>
