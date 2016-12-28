@@ -70,10 +70,10 @@ class PreguntasController extends AppController
                        $respuesta= $respuestas->newEntity($sub, ['validate' => false]);
                        $respuestas->save($respuesta);
                    }
-                $this->Flash->success(__('The pregunta has been saved.'));
+                $this->Flash->success(__('La pregunta se ah guardado con exito'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The pregunta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La pregunta no pudo ser guardada. Porfavor intente de nuevo.'));
             }
         }
         $categorias = $this->Preguntas->Categorias->find('list', ['limit' => 200]);
@@ -97,10 +97,10 @@ class PreguntasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $pregunta = $this->Preguntas->patchEntity($pregunta, $this->request->data);
             if ($this->Preguntas->save($pregunta)) {
-                $this->Flash->success(__('The pregunta has been saved.'));
+                 $this->Flash->success(__('La pregunta se ah editado con exito'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The pregunta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La pregunta no pudo ser editada. Porfavor intente de nuevo.'));
             }
         }
         $categorias = $this->Preguntas->Categorias->find('list', ['limit' => 200]);
@@ -120,9 +120,9 @@ class PreguntasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $pregunta = $this->Preguntas->get($id);
         if ($this->Preguntas->delete($pregunta)) {
-            $this->Flash->success(__('The pregunta has been deleted.'));
+            $this->Flash->success(__('La pregunta se ah borrado con exito'));
         } else {
-            $this->Flash->error(__('The pregunta could not be deleted. Please, try again.'));
+            $this->Flash->error(__('La pregunta no pudo ser borrada. Porfavor intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

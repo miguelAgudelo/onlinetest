@@ -1,76 +1,57 @@
-<div class="container2" id="micuadro">
-
-    <h3><?= $evaluacion[0]->nombre ?></h3>
-    <?= $this->Form->input('evaluacion', ['id'=>'evaluacion','type'=>'hidden','value'=>$evaluacion[0]->id]); ?>
-    <div class="separador"></div>
-    <table class="vertical-table">
-        <tr>
-            <th><?= __('Creada') ?></th>
-            <td colspan="4"><?= h($evaluacion[0]->created) ?></td>
-        </tr>
-    </table>
-    <br>
-                <?php $c=0; ?>
-                <?php $v=0; ?>
-                <?php foreach ($pregunta as $Preguntas): ?>
-                 
-                    <?= $this->Form->input('pregunta'.$c.'', ['id'=>'pregunta'.$c.'','type'=>'hidden','value'=>$Preguntas[0]->id]); ?>
-                    <div class="col-md-8" id="mipregunta"><?= h($Preguntas[0]->texto) ?></div>
-                    <div class="col-md-4" id="mipregunta">Ponderada en: <?php echo $evaluacionpregunta[$c]->ponderacion; ?></div>
-                    <br> 
-                    <div class="col-md-12" id="mirespuestas"> 
-                      <div class="radio" id="mycheck">  
-                      <?php foreach ($Preguntas[0]['respuestas'] as $respuesta): ?>
-                      
-                      <div class="col-md-12" id="mirees">         
-                        <label><input type="radio" value=<?php echo $respuesta->id;?> name="miradio<?php echo $c;?>" id="radio<?php echo $v;?>"><?= h($respuesta->texto) ?></label>
-                      </div>
-                      <?php $v++; ?>
-                      <?php endforeach ?>
-                     
-                      </div>
+<div id="wrapper" ng-controller="pruebacontroller">
+        <div id="sidebar-wrapper">
+            <aside id="sidebar">
+                <ul id="sidemenu" class="sidebar-nav">
+                <div ng-repeat="evaluacionpregunta in evaluacionpreguntas">
+                  <div ng-repeat="evaluacion in evaluacionpregunta">
+                    <li>
+                        <a>
+                            <span class="sidebar-title">{{evaluacion.pregunta.texto}}</span>
+                            <button class="btn btn-primary btn-xs" ng-click="load_pregunta(evaluacion.pregunta.id)">Responder</button>
+                        </a>
+                    </li>
                     </div>
-                   
-                     <?php $c++; ?>
-                 <?php endforeach ?>
-                 <?= $this->Form->input('numerador', ['id'=>'numerador','type'=>'hidden','value'=>$c]); ?>
-                 <?= $this->Form->input('numerador2', ['id'=>'numerador2','type'=>'hidden','value'=>$v]); ?>
-           
-    </table>
-    <br>
-     <center>
-         <?= $this->Form->button('Terminar',['class'=>'btn btn-success','id'=>'terminar']) ?>
-     </center>
-</div>
-<br>           
-<script type="text/javascript">
-  $(document).on('ready',function(){
-       
-        $('#terminar').on('click',function(){
-          $('#terminar').addClass("disabled");
-           var preguntas=[];
-           var respuestas=[];
-           var numerador=$('#numerador').val();
-            for (var i = 0; i < numerador; i++) {
-               var pregunta=$('#pregunta'+i+'').val()
-               //preguntas.push(pregunta)
-               var respuesta=$('input:radio[name=miradio'+i+']:checked').val()
-               //respuestas.push(respuesta)
-               $.ajax({
-                  data: {"pregunta" : pregunta,"respuesta" : respuesta,"evaluacion":$('#evaluacion').val()},
-                  url:   'http://localhost/pruebaonline3/evaluacionpreguntas/responder',
-                  type:  'post',
-                  dataType:'json',
-                  beforeSend: function (xhr) {
-                      console.log(respuesta);console.log(pregunta)
-                  },
-                  success:  function (response){
-                       
-                                   }
-            });
-            }
-            alert("SU respuesta seran procesadas por el sistema por favor valla a los resultados")
-            setTimeout(function(){window.location.href="http://localhost/pruebaonline3/evaluacions"} , 2000);   
-        });     
-    });
-</script>
+                  </div>
+                </ul>
+            </aside>            
+        </div>
+        <main id="page-content-wrapper" role="main">
+         
+              <div ng-repeat="evaluacionpregunta in evaluacionpreguntas">
+                <div ng-repeat="evaluacion in evaluacionpregunta">
+                  <div ng-if="evaluacion.pregunta.id == numero">
+                     <div class="container2">
+                        <h4>{{evaluacion.pregunta.texto}}</h4>
+                          <div ng-if="evaluacion.pregunta.photo!=NULL">    
+                              <center><img src="../../Files/Preguntas/photo/{{evaluacion.pregunta.photo}}" width="400px" height="200px"></center>
+                          </div>
+                        <div class="row"><div class="col-md-4 col-md-offset-8">Puntos: {{evaluacion.ponderacion}}</div></div>
+                        <div ng-repeat="respuesta in evaluacion.pregunta.respuestas">
+                            <div ng-if="evaluacion.pregunta.tipo==1">    
+                              <label><input type="radio" value="{{respuesta.id}}" name="miradio">{{respuesta.texto}}</label>
+                            </div>
+                            <div ng-if="evaluacion.pregunta.tipo==2">    
+                              <div class="checkbox">
+                                <label><input type="checkbox" value="{{respuesta.id}}">{{respuesta.texto}}</label>
+                              </div>
+                            </div>
+                            
+                        </div>
+                          <div ng-if="evaluacion.pregunta.tipo==3">    
+                              <div class="form-group">
+                                <label for="comment">Respuesta:</label>
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                              </div>
+                          </div>
+                        <center><?= $this->Form->button('Responder',['class'=>'btn btn-success','type'=>'button','id'=>'terminar']) ?></center>
+                     </div>
+                   </div>
+                </div>     
+              </div>
+         
+        </main>
+    </div> 
+
+
+
+

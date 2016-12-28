@@ -14,6 +14,16 @@
         <label for="ponderada">¿La evaluacion es ponderada?</label> 
         <?= $this->Form->input('ponderada',['options'=>['No'=>'No','Si'=>'Si'],'label'=>'','class'=>"form-control"]); ?>
         </div>
+        <br>
+        <div class="form-group">
+         <label for="contiempo">¿Tiempo para realizar la prueba?</label> 
+        <?= $this->Form->input('contiempo',['type'=>'time','label'=>'','class'=>"form-control"]); ?>
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="tiempo">Fecha de expiración de la prueba</label> 
+        <?= $this->Form->input('expiracion',['class'=>"form-control",'label'=>'','type'=>'datetime-local']); ?>
+        </div>
         
          <div class="form-group">
             <?= $this->Form->button('agregar requisitos', ['id'=>'sub','type'=>'button','class'=>"btn btn-primary"]); ?>

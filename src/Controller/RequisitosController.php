@@ -55,10 +55,10 @@ class RequisitosController extends AppController
         if ($this->request->is('post')) {
             $requisito = $this->Requisitos->patchEntity($requisito, $this->request->data);
             if ($this->Requisitos->save($requisito)) {
-                $this->Flash->success(__('The requisito has been saved.'));
+                $this->Flash->success(__('Su requisito ah sido guardado con exito.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The requisito could not be saved. Please, try again.'));
+                $this->Flash->error(__('El requisito no pudo se guardado. Porfavor, intente de nuevo.'));
             }
         }
         $evaluacions = $this->Requisitos->Evaluacions->find('list', ['limit' => 200]);
@@ -81,10 +81,10 @@ class RequisitosController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $requisito = $this->Requisitos->patchEntity($requisito, $this->request->data);
             if ($this->Requisitos->save($requisito)) {
-                $this->Flash->success(__('The requisito has been saved.'));
+                $this->Flash->success(__('Su requisito ah sido editado con exito.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The requisito could not be saved. Please, try again.'));
+                 $this->Flash->error(__('El requisito no pudo se editado. Porfavor, intente de nuevo.'));
             }
         }
         $evaluacions = $this->Requisitos->Evaluacions->find('list', ['limit' => 200]);
@@ -104,9 +104,9 @@ class RequisitosController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $requisito = $this->Requisitos->get($id);
         if ($this->Requisitos->delete($requisito)) {
-            $this->Flash->success(__('The requisito has been deleted.'));
+            $this->Flash->success(__('Su requisito ah sido borrado con exito.'));
         } else {
-            $this->Flash->error(__('The requisito could not be deleted. Please, try again.'));
+            $this->Flash->error(__('El requisito no pudo se borrado. Porfavor, intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

@@ -17,14 +17,13 @@ class EvaluacionpreguntasController extends AppController
      * @return \Cake\Network\Response|null
      */
     public function index()
-    {
-        $this->paginate = [
-            'contain' => ['Evaluacions', 'Preguntas']
-        ];
-        $evaluacionpreguntas = $this->paginate($this->Evaluacionpreguntas);
-
-        $this->set(compact('evaluacionpreguntas'));
-        $this->set('_serialize', ['evaluacionpreguntas']);
+    {   $presentadoTable = TableRegistry::get('Presentados');
+        $presentado=$presentadoTable->find()->where(['user_id'=>$this->Auth->user('id'),'presenta'=>1])->first();
+        $evaluacionpreguntas = $this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$presentado->evaluacion_id,'user_id'=>$this->Auth->user('id')])->contain(['Preguntas'=>['Respuestas']]);
+        $this->set([
+            'evaluacionpreguntas' => $evaluacionpreguntas,
+            '_serialize' => ['evaluacionpreguntas']
+        ]);
     }
 
     /**
@@ -45,10 +44,11 @@ class EvaluacionpreguntasController extends AppController
     }
 
     public function resolver($id = null)
-    {   $presentadoTable = TableRegistry::get('Presentados');
+    {   
+        $presentadoTable = TableRegistry::get('Presentados');
         $presentado=$presentadoTable->find()->where(['evaluacion_id'=>$id,'user_id'=>$this->Auth->user('id'),'presenta'=>2])->toArray();
         if(count($presentado)==0){
-            $evaluacionpregunta=$this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$id,'user_id'=>1])->contain(['Preguntas'=>['Respuestas']])->toArray();
+            $evaluacionpregunta=$this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$id,'user_id'=>$this->Auth->user('id')])->contain(['Preguntas'=>['Respuestas']])->toArray();
             $evaluacions=TableRegistry::get('Evaluacions');
             $evaluacion=$evaluacions->find()->where(['id'=>$id])->toArray();
             $pregunta=array();
@@ -64,7 +64,6 @@ class EvaluacionpreguntasController extends AppController
             $this->Flash->error(__('Esta evaluacion ya ha sido realizada por usted'));
             return $this->redirect(['controller'=>'evaluacions','action' => 'index']);
         }
-        
     }
 
     /**

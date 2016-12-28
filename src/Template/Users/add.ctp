@@ -44,7 +44,7 @@
        
     </fieldset>
     <br>
-    <center><?= $this->Form->button('Registrar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit']) ?></center>
+    <center><?= $this->Form->button('Registrar',['id'=>'enviar','class'=>'btn btn-success','type'=>'submit','disabled']) ?></center>
     <?= $this->Form->end() ?>
 </div>
 <br><br><br>
@@ -59,11 +59,11 @@ $(document).ready(function() {
 
         if ( pass1 == pass2 ) {
             $('#error2').text("La contraseña coincide").css("color", "green")
-            $('.enviar').attr('disabled',false)
+            $('#enviar').attr('disabled',false)
 
         } else {
             $('#error2').text("Las contraseñas no coinciden").css("color", "red")
-            $('.enviar').attr('disabled',true)
+            $('#enviar').attr('disabled',true)
         }
 
     });

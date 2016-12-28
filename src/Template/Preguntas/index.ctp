@@ -25,7 +25,7 @@
                 
                 <td><?= h($pregunta->created) ?></td>
                
-                <td class="actions"> 
+                <td class="btn-group"> 
 
 
 

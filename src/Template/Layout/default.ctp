@@ -29,22 +29,27 @@ $cakeDescription = 'Generador de pruebas online';
     <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('select2.min.css') ?>
     <?= $this->Html->script('jquery.min.js') ?>
+    <?= $this->Html->script('angular.min.js'); ?>
+    <?= $this->Html->script('angular-local-storage.min.js') ?>
+    <?= $this->Html->script('prueba.js'); ?>
     <?= $this->Html->script('bootstrap.min.js') ?>
     <?= $this->Html->script('select2.min.js') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
-<body>
+<body ng-app="prueba">
     <div id="wrap">
     <?php if($role=="admin"): ?>
     <?php echo $this->element('navbar'); ?>
+    <?= $this->Flash->render() ?>
     <?php elseif($role=="user"): ?>
     <?php echo $this->element('navbar2'); ?>
-    <?php else: ?>
-    <br><br><br>
-    <?php endif; ?>
     <?= $this->Flash->render() ?>
+    <?php else: ?>
+    <?= $this->Flash->render() ?>
+    <br><br>
+    <?php endif; ?>
     <div>
         <?= $this->fetch('content') ?>
     </div>

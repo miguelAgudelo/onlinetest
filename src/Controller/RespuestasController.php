@@ -55,10 +55,10 @@ class RespuestasController extends AppController
         if ($this->request->is('post')) {
             $respuesta = $this->Respuestas->patchEntity($respuesta, $this->request->data);
             if ($this->Respuestas->save($respuesta)) {
-                $this->Flash->success(__('The respuesta has been saved.'));
+                $this->Flash->success(__('La respuesta ah sido guarda con exito.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The respuesta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La respuesta no pudo ser guardada. Porfavor, intente de nuevo.'));
             }
         }
         $preguntas = $this->Respuestas->Preguntas->find('list', ['limit' => 200]);
@@ -81,10 +81,10 @@ class RespuestasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $respuesta = $this->Respuestas->patchEntity($respuesta, $this->request->data);
             if ($this->Respuestas->save($respuesta)) {
-                $this->Flash->success(__('The respuesta has been saved.'));
+               $this->Flash->success(__('La respuesta ah sido editada con exito.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The respuesta could not be saved. Please, try again.'));
+                $this->Flash->error(__('La respuesta no pudo ser editada. Porfavor, intente de nuevo.'));
             }
         }
         $preguntas = $this->Respuestas->Preguntas->find('list', ['limit' => 200]);
@@ -104,9 +104,9 @@ class RespuestasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $respuesta = $this->Respuestas->get($id);
         if ($this->Respuestas->delete($respuesta)) {
-            $this->Flash->success(__('The respuesta has been deleted.'));
+            $this->Flash->success(__('La respuesta ah sido borrar con exito.'));
         } else {
-            $this->Flash->error(__('The respuesta could not be deleted. Please, try again.'));
+                $this->Flash->error(__('La respuesta no pudo ser borrada. Porfavor, intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

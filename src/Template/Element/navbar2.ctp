@@ -20,6 +20,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Evaluaciones <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><?php echo $this->Html->link("Lista de Evaluaciones", ['controller'=>'evaluacions']);?></li>
+            <li><?php echo $this->Html->link("Mis Notas", ['controller'=>'evaluacions','action'=>'miresultado']);?></li>
           </ul>
         </li>
 

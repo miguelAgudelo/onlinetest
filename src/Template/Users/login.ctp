@@ -15,5 +15,5 @@
 <center><?= $this->Form->button('Ingresar',['id'=>'enviar','class'=>'btn btn-primary ','type'=>'submit']) ?></center>
 <?= $this->Form->end() ?>
 <br>
-<?= $this->Html->link(__('Registrase'), ['controller' => 'users', 'action' => 'add']) ?>
+<?= $this->Html->link(__('Registrarse'), ['controller' => 'users', 'action' => 'add']) ?>
 </div>

@@ -7,9 +7,6 @@
                 <th><?= $this->Paginator->sort('nombre') ?></th>
                 <th><?= $this->Paginator->sort('apellido') ?></th>
                 <th><?= $this->Paginator->sort('cedula') ?></th>
-                <th><?= $this->Paginator->sort('username') ?></th>
-                <th><?= $this->Paginator->sort('email') ?></th>
-                <th><?= $this->Paginator->sort('Ingreso') ?></th>
                
                 <th class="actions"><?= __('Acciones') ?></th>
             </tr>
@@ -22,12 +19,7 @@
                 <td><?= h($user->apellido) ?></td>
                 <td><?= $this->Number->format($user->cedula) ?></td>
                
-                <td><?= h($user->username) ?></td>
-               
-                <td><?= h($user->email) ?></td>
-                <td><?= h($user->created) ?></td>
-               
-                <td class="actions"> 
+                <td class="btn-group"> 
 
                    <?= $this->Html->link(__('Ver'), ['action' => 'view',$user->id],['class' => 'btn btn-sm btn-info']) ?> 
 
@@ -36,8 +28,6 @@
 
 
                     <?= $this->Html->link(__('Adiccionar Materias'), ['action' => 'agregarmateria', $user->id],['class' => 'btn btn-sm btn-info']) ?> 
-
-
 
 
                     <?= $this->Html->link(__('Retirar Materias'), ['action' => 'retirarmateria', $user->id],['class' => 'btn btn-sm btn-info']) ?> 

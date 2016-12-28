@@ -1,5 +1,5 @@
 <div class="container2">
-    <?= $this->Form->create($pregunta) ?>
+    <?= $this->Form->create($pregunta,['type'=>'file']) ?>
     <fieldset>
         <legend><?= __('Crear Pregunta') ?></legend>
         <div class="form-group">
@@ -14,7 +14,18 @@
         </div>
         <div class="form-group">
         <label for="tipo">¿Tipo de pregunta?</label>
-        <?= $this->Form->input('tipo', ['options' => [1=>'seleccion simple'],'label'=>'','class'=>"form-control"]);  ?>
+        <?= $this->Form->input('tipo', ['options' => [1=>'seleccion simple',2=>'seleccion multiple',3=>'respuesta escrita'],'label'=>'','class'=>"form-control"]);  ?>
+        </div>
+        <div class="form-group">
+        <button data-toggle="collapse" data-target="#demo" type="button">¿Desea agregar una imagen de referencia a la pregunta?</button>
+        
+        <div id="demo" class="collapse">
+          <br>
+          <label class="custom-file">
+            <input type="file" id="file" class="custom-file-input" name="photo">
+          <span class="custom-file-control"></span>
+        </label>
+        </div>
         </div>
        <?= $this->Form->button('agregar selecciones', ['id'=>'sub','type'=>'button','class'=>"btn btn-primary"]); ?>
         <?= $this->Form->input('numerador', ['id'=>'numerador','type'=>'hidden']); ?>

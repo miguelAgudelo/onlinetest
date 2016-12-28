@@ -35249,3 +35249,615 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-12-07 22:10:26 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Controller\EvaluacionpreguntasController.php, line 89]
+Request URL: /pruebaonline3/evaluacionpreguntas/responder
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\EvaluacionpreguntasController::responder() - APP/Controller\EvaluacionpreguntasController.php, line 89
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:10:26 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Controller\EvaluacionpreguntasController.php, line 89]
+Request URL: /pruebaonline3/evaluacionpreguntas/responder
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\EvaluacionpreguntasController::responder() - APP/Controller\EvaluacionpreguntasController.php, line 89
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-07 22:11:21 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/7
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:36:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:42 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 18]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 18
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 19]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 19
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Undefined offset: 0 in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-08 03:38:43 Notice: Notice (8): Trying to get property of non-object in [C:\xampp\htdocs\pruebaonline3\src\Template\Evaluacions\veresultado.ctp, line 20]
+Request URL: /pruebaonline3/evaluacions/veresultado/9
+Referer URL: http://localhost/pruebaonline3/evaluacions
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Template\Evaluacions\veresultado.ctp, line 20
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 992
+Cake\View\View::_render() - CORE\src\View\View.php, line 952
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-23 05:20:17 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Table.php, line 1808]
+Request URL: /pruebaonline3/evaluacionpreguntas.json
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1808
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 948
+App\Controller\EvaluacionpreguntasController::index() - APP/Controller\EvaluacionpreguntasController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-23 05:20:17 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Table.php, line 1818]
+Request URL: /pruebaonline3/evaluacionpreguntas.json
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+sprintf - [internal], line ??
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1818
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 948
+App\Controller\EvaluacionpreguntasController::index() - APP/Controller\EvaluacionpreguntasController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-27 01:36:51 Notice: Notice (8): Undefined variable: finder in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Query.php, line 1002]
+Request URL: /pruebaonline3/evaluacionpreguntas.json
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Query::find() - CORE\src\ORM\Query.php, line 1002
+App\Controller\EvaluacionpreguntasController::App\Controller\{closure}() - APP/Controller\EvaluacionpreguntasController.php, line 22
+Cake\ORM\Association\HasMany::_buildQuery() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 118
+Cake\ORM\Association\HasMany::eagerLoader() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 47
+Cake\ORM\EagerLoader::loadExternal() - CORE\src\ORM\EagerLoader.php, line 584
+Cake\ORM\Query::_execute() - CORE\src\ORM\Query.php, line 921
+Cake\ORM\Query::_all() - CORE\src\Datasource\QueryTrait.php, line 272
+Cake\ORM\Query::all() - CORE\src\ORM\Query.php, line 871
+Cake\ORM\Query::jsonSerialize() - CORE\src\ORM\Query.php, line 1112
+json_encode - [internal], line ??
+Cake\View\JsonView::_serialize() - CORE\src\View\JsonView.php, line 150
+Cake\View\SerializedView::render() - CORE\src\View\SerializedView.php, line 89
+Cake\View\JsonView::render() - CORE\src\View\JsonView.php, line 107
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-27 01:37:13 Notice: Notice (8): Undefined variable: finder in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Query.php, line 1002]
+Request URL: /pruebaonline3/evaluacionpreguntas.json
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Query::find() - CORE\src\ORM\Query.php, line 1002
+App\Controller\EvaluacionpreguntasController::App\Controller\{closure}() - APP/Controller\EvaluacionpreguntasController.php, line 22
+Cake\ORM\Association\HasMany::_buildQuery() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 118
+Cake\ORM\Association\HasMany::eagerLoader() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 47
+Cake\ORM\EagerLoader::loadExternal() - CORE\src\ORM\EagerLoader.php, line 584
+Cake\ORM\Query::_execute() - CORE\src\ORM\Query.php, line 921
+Cake\ORM\Query::_all() - CORE\src\Datasource\QueryTrait.php, line 272
+Cake\ORM\Query::all() - CORE\src\ORM\Query.php, line 871
+Cake\ORM\Query::jsonSerialize() - CORE\src\ORM\Query.php, line 1112
+json_encode - [internal], line ??
+Cake\View\JsonView::_serialize() - CORE\src\View\JsonView.php, line 150
+Cake\View\SerializedView::render() - CORE\src\View\SerializedView.php, line 89
+Cake\View\JsonView::render() - CORE\src\View\JsonView.php, line 107
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+
+2016-12-27 01:37:37 Notice: Notice (8): Undefined variable: finder in [C:\xampp\htdocs\pruebaonline3\vendor\cakephp\cakephp\src\ORM\Query.php, line 1002]
+Request URL: /pruebaonline3/evaluacionpreguntas.json
+Referer URL: http://localhost/pruebaonline3/evaluacionpreguntas/resolver/7
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\ORM\Query::find() - CORE\src\ORM\Query.php, line 1002
+App\Controller\EvaluacionpreguntasController::App\Controller\{closure}() - APP/Controller\EvaluacionpreguntasController.php, line 22
+Cake\ORM\Association\HasMany::_buildQuery() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 118
+Cake\ORM\Association\HasMany::eagerLoader() - CORE\src\ORM\Association\SelectableAssociationTrait.php, line 47
+Cake\ORM\EagerLoader::loadExternal() - CORE\src\ORM\EagerLoader.php, line 584
+Cake\ORM\Query::_execute() - CORE\src\ORM\Query.php, line 921
+Cake\ORM\Query::_all() - CORE\src\Datasource\QueryTrait.php, line 272
+Cake\ORM\Query::all() - CORE\src\ORM\Query.php, line 871
+Cake\ORM\Query::jsonSerialize() - CORE\src\ORM\Query.php, line 1112
+json_encode - [internal], line ??
+Cake\View\JsonView::_serialize() - CORE\src\View\JsonView.php, line 150
+Cake\View\SerializedView::render() - CORE\src\View\SerializedView.php, line 89
+Cake\View\JsonView::render() - CORE\src\View\JsonView.php, line 107
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 36
+
+
+

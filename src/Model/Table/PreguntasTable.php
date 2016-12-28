@@ -34,7 +34,9 @@ class PreguntasTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
-
+        $this->addBehavior('Josegonzalez/Upload.Upload', [
+            'photo' => []
+        ]);
         $this->belongsTo('Categorias', [
             'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'

@@ -22,20 +22,11 @@
                 <td><?php if($respuesta->correcta==1){echo "correcta";}else{ echo "incorrecta";} ?></td>
                 <td><?= h($respuesta->created) ?></td>
                 
-                <td class="actions"> 
+                <td class="btn-group"> 
 
-
-
-                    <?= $this->Html->link(__('Ver'), ['action' => 'view',$respuesta->id],['class' => 'btn btn-sm btn-info']) ?> 
-
-
-
-
+                    
 
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $respuesta->id],['class' => 'btn btn-sm btn-info']) ?> 
-
-
-
 
                    <?php echo $this->Form->postLink(__('<i class="fa fa-trash">Eliminar</i>'), array('action' => 'delete', $respuesta->id), array('class' => 'btn btn-sm btn-success', 'escape' => false, 'button title' => 'ELIMINAR'), array('confirm' => __('Are you sure you want to delete # {0}?', $respuesta->id))); ?>  
 

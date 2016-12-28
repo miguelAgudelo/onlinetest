@@ -15,7 +15,7 @@
                
                 <td><?= h($categoria->nombre) ?></td>
                 <td><?= h($categoria->modified) ?></td>
-                <td class="actions"> 
+                <td class="btn-group"> 
  
 
                      <?= $this->Html->link(__('Ver'), ['action' => 'view',$categoria->id],['class' => 'btn btn-sm btn-info']) ?>  

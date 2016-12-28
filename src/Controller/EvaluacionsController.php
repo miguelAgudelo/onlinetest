@@ -116,25 +116,39 @@ class EvaluacionsController extends AppController
 
     public function veresultado($id = null)
     {
-       /*$evaluacion = $this->Evaluacions->get($id, [
-            'contain' => ['Categorias', 'Evaluacionpreguntas'=>['Resultados'=>['Evaluacionpreguntas'=>['Preguntas']],'Users']]
-        ]);
-        $Resultados = TableRegistry::get('Resultados');
-        $resultado=$Resultados->find()->matching('Evaluacionpreguntas.Evaluacions',function($q) use ($id)
-            { 
-                return $q->where(['Evaluacions.id'=>$id]);
-            });
-        $resultado->select([
-            'total' => $resultado->func()->sum('ponderacion')
-        ])->group(['user_id']);
-        $t=array();
-        foreach ($resultado as $total) {
-            array_push($t, $total->total);
-        }
-        */
+       
         $evaluacion = $this->Evaluacions->get($id);
         $Users = TableRegistry::get('Users');
         $users=$Users->find()->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
+            return $q->where(['Evaluacions.id'=>$id]);
+        })->toArray();
+        $notas=array_unique($users);
+        $this->set(compact('evaluacion','notas'));
+        $this->set('_serialize', ['evaluacion']);
+    }
+
+
+    public function miresultado()
+    {
+       
+        $this->paginate = [
+            'contain' => ['Categorias']
+        ];
+
+        $evaluacions = $this->paginate($this->Evaluacions->find()->matching('Presentados', function ($q) {
+            return $q->where(['Presentados.user_id' => $this->Auth->user('id'),'Presentados.presenta'=>2]);
+        }));
+
+        $this->set(compact('evaluacions'));
+        $this->set('_serialize', ['evaluacions']);
+    }
+
+    public function minota($id = null)
+    {
+       
+        $evaluacion = $this->Evaluacions->get($id);
+        $Users = TableRegistry::get('Users');
+        $users=$Users->find()->where(['Users.id'=>$this->Auth->user('id')])->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
             return $q->where(['Evaluacions.id'=>$id]);
         })->toArray();
         $notas=array_unique($users);
@@ -185,10 +199,10 @@ class EvaluacionsController extends AppController
                            $requisito= $requisitos->newEntity($sub, ['validate' => false]);
                            $requisitos->save($requisito);
                        }
-                    $this->Flash->success(__('The evaluacion has been saved.'));
+                    $this->Flash->success(__('La evaluacion ah sido guardada.'));
                     return $this->redirect(['action' => 'index']);
                 } else {
-                    $this->Flash->error(__('The evaluacion could not be saved. Please, try again.'));
+                    $this->Flash->error(__('La evaluacion no pudo ser guardada. Porfavor intente de nuevo.'));
                 }
             }else{
                 $this->Flash->error(__('Uno de sus requisitos no pudo ser cumplido.'));
@@ -215,10 +229,10 @@ class EvaluacionsController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $evaluacion = $this->Evaluacions->patchEntity($evaluacion, $this->request->data);
             if ($this->Evaluacions->save($evaluacion)) {
-                $this->Flash->success(__('The evaluacion has been saved.'));
+                $this->Flash->success(__('La evaluacion ah sido editada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The evaluacion could not be saved. Please, try again.'));
+                $this->Flash->error(__('La evaluacion no pudo ser editada. Porfavor intente de nuevo.'));
             }
         }
         $categorias = $this->Evaluacions->Categorias->find('list', ['limit' => 200]);
@@ -238,9 +252,9 @@ class EvaluacionsController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $evaluacion = $this->Evaluacions->get($id);
         if ($this->Evaluacions->delete($evaluacion)) {
-            $this->Flash->success(__('The evaluacion has been deleted.'));
+            $this->Flash->success(__('La evaluacion fue borrada.'));
         } else {
-            $this->Flash->error(__('The evaluacion could not be deleted. Please, try again.'));
+            $this->Flash->error(__('Imposible borrar la evaluacion. Porfavor intente de nuevo'));
         }
         return $this->redirect(['action' => 'index']);
     }

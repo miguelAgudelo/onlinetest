@@ -67,10 +67,10 @@ class CategoriasController extends AppController
                        $evaluacion= $evaluacions->newEntity($sub, ['validate' => false]);
                        $evaluacions->save($evaluacion);
                    }
-                $this->Flash->success(__('The categoria has been saved.'));
+                $this->Flash->success(__('La materia ah sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('No se pudo guardar la materia. Porfavor intente de nuevo.'));
             }
         }
         $evaluacions = $this->Categorias->Evaluacions->find('list', ['limit' => 200]);
@@ -99,10 +99,10 @@ class CategoriasController extends AppController
                        $evaluacions->save($evaluacion);
                    }
             if ($evaluacions->save($evaluacion)) {
-                $this->Flash->success(__('The categoria has been saved.'));
+                $this->Flash->success(__('La materia ah sido guardada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
+                $this->Flash->error(__('No se pudo guardar la materia. Porfavor intente de nuevo.'));
             }
         }
         $evaluacions = $this->Categorias->Evaluacions->find('list', ['limit' => 200]);
@@ -126,10 +126,10 @@ class CategoriasController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $categoria = $this->Categorias->patchEntity($categoria, $this->request->data);
             if ($this->Categorias->save($categoria)) {
-                $this->Flash->success(__('The categoria has been saved.'));
+               $this->Flash->success(__('La materia ah sido editada.'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The categoria could not be saved. Please, try again.'));
+                $$this->Flash->error(__('No se pudo editar la materia. Porfavor intente de nuevo.'));
             }
         }
         $evaluacions = $this->Categorias->Evaluacions->find('list', ['limit' => 200]);
@@ -149,9 +149,9 @@ class CategoriasController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $categoria = $this->Categorias->get($id);
         if ($this->Categorias->delete($categoria)) {
-            $this->Flash->success(__('The categoria has been deleted.'));
+            $this->Flash->success(__('La materia ah sido borrada.'));
         } else {
-            $this->Flash->error(__('The categoria could not be deleted. Please, try again.'));
+            $this->Flash->error(__('Imposible borrar la materia. Porfavor intente de nuevo.'));
         }
         return $this->redirect(['action' => 'index']);
     }

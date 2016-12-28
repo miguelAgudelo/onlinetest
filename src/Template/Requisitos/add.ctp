@@ -9,7 +9,7 @@
             <?= $this->Form->input('nivel',['options' => [1=>'facil',2=>'medio',3=>'dificil'],'label'=>'Nivel de dificultad','class'=>"form-control"]); ?>
         </div>
         <div class="form-group"> 
-            <?= $this->Form->input('tipo',['options' => [1=>'seleccion simple'],'label'=>'Tipo de pregunta','class'=>"form-control"]); ?>
+            <?= $this->Form->input('tipo',['options' => [1=>'seleccion simple',2=>'seleccion multiple',3=>'respuesta escrita'],'label'=>'Tipo de pregunta','class'=>"form-control"]); ?>
         </div>
         <div class="form-group"> 
             <?= $this->Form->input('cantidad',['label'=>'Cantidad','class'=>"form-control" ]); ?>

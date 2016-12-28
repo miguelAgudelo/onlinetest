@@ -41,7 +41,11 @@ use Cake\Routing\Router;
  *
  */
 Router::defaultRouteClass('DashedRoute');
-
+Router::scope('/', function ($routes) {
+    $routes->extensions(['json']);
+    $routes->resources('Evaluacionpreguntas',[
+    'only' => ['index', 'view']]);
+});
 Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',

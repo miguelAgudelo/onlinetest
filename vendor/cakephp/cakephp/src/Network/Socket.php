@@ -220,7 +220,7 @@ class Socket
 
     /**
      * socket_stream_client() does not populate errNum, or $errStr when there are
-     * connection errors, as in the case of SSL verification failure.
+     * connection errors, as in the case of SSL verification dailure.
      *
      * Instead we need to handle those errors manually.
      *
