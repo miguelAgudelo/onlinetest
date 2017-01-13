@@ -74,31 +74,78 @@ class EvaluacionpreguntasController extends AppController
 
     public function responder(){
         $this->render(false);
-        if ($this->request->is('ajax')) {
-            
+        if ($this->request->is('post')) {
+           
             $resultadosTable = TableRegistry::get('Resultados');
             $respuestas = TableRegistry::get('Respuestas');
             $presentados = TableRegistry::get('Presentados');
+            $Preguntas = TableRegistry::get('Preguntas');
             $evaluacionpregunta1=$this->Evaluacionpreguntas->find()->where(['user_id'=>$this->Auth->user('id'),'pregunta_id'=>$this->request->data['pregunta'],'evaluacion_id'=>$this->request->data['evaluacion']])->toArray();
-
-            $respuesta1=$respuestas->find()->where(['id'=>$this->request->data['respuesta']])->toArray();
-            $correcta=$respuesta1[0]->correcta;
-            $puntos=0;
-            if($correcta==1){$puntos=$evaluacionpregunta1[0]->ponderacion;}
-            $evaluacionpregunta = $resultadosTable->Evaluacionpreguntas->findById($evaluacionpregunta1[0]->id)->first();
-            $respuesta = $resultadosTable->Respuestas->findById($this->request->data['respuesta'])->first();
-            $resultado = $resultadosTable->newEntity();
-                $resultado->evaluacionpregunta = $evaluacionpregunta;
-                $resultado->respuesta = $respuesta;
-                $resultado->correcta = $correcta;
-                $resultado->puntos = $puntos;
-            if($resultadosTable->save($resultado)){
-                $presentado=$presentados->query();
-                $presentado->update()
-                    ->set(['presenta'=>2])
-                    ->where(['evaluacion_id' => $this->request->data['evaluacion'],'user_id'=>$this->Auth->user('id'),'presenta'=>1])
-                    ->execute();
-            }    
+            $pregunta=$Preguntas->findById($this->request->data['pregunta'])->first();
+            if($pregunta->tipo==1){
+                $respuesta1=$respuestas->find()->where(['id'=>$this->request->data['respuesta']])->toArray();
+                $correcta=$respuesta1[0]->correcta;
+                $puntos=0;
+                if($correcta==1){$puntos=$evaluacionpregunta1[0]->ponderacion;}
+                $evaluacionpregunta = $resultadosTable->Evaluacionpreguntas->findById($evaluacionpregunta1[0]->id)->first();
+                $respuesta = $resultadosTable->Respuestas->findById($this->request->data['respuesta'])->first();
+                $resultado = $resultadosTable->newEntity();
+                    $resultado->evaluacionpregunta = $evaluacionpregunta;
+                    $resultado->respuesta = $respuesta;
+                    $resultado->correcta = $correcta;
+                    $resultado->puntos = $puntos;
+                if($resultadosTable->save($resultado)){
+                    $presentado=$presentados->query();
+                    $presentado->update()
+                        ->set(['presenta'=>2])
+                        ->where(['evaluacion_id' => $this->request->data['evaluacion'],'user_id'=>$this->Auth->user('id'),'presenta'=>1])
+                        ->execute();
+                }
+            }elseif ($pregunta->tipo==2) {
+                for ($i=0; $i <count($this->request->data['respuesta']) ; $i++) { 
+                    $respuesta1=$respuestas->find()->where(['id'=>$this->request->data['respuesta'][$i]])->toArray();
+                    $correcta=$respuesta1[0]->correcta;
+                    $puntos=0;
+                    if($correcta==1){
+                            $cuantos=$respuestas->find()->where(['pregunta_id'=>$pregunta->id,'correcta'=>1])->toArray();
+                            $puntos=$evaluacionpregunta1[0]->ponderacion/count($cuantos);
+                            }
+                    $evaluacionpregunta = $resultadosTable->Evaluacionpreguntas->findById($evaluacionpregunta1[0]->id)->first();
+                    $respuesta = $resultadosTable->Respuestas->findById($this->request->data['respuesta'][$i])->first();
+                    $resultado = $resultadosTable->newEntity();
+                        $resultado->evaluacionpregunta = $evaluacionpregunta;
+                        $resultado->respuesta = $respuesta;
+                        $resultado->correcta = $correcta;
+                        $resultado->puntos = $puntos;
+                    if($resultadosTable->save($resultado)){
+                        $presentado=$presentados->query();
+                        $presentado->update()
+                            ->set(['presenta'=>2])
+                            ->where(['evaluacion_id' => $this->request->data['evaluacion'],'user_id'=>$this->Auth->user('id'),'presenta'=>1])
+                            ->execute();
+                    }
+                }
+            }elseif ($pregunta->tipo==3) {
+                    $texto = $this->request->data['respuesta'];
+                    $corregido=0;
+                    $evaluacionpregunta = $resultadosTable->Evaluacionpreguntas->findById($evaluacionpregunta1[0]->id)->first();
+                    $punto=0;
+                    $Revisados = TableRegistry::get('Revisados');
+                    $revisado = $Revisados->newEntity();
+                        $revisado->texto = $texto;
+                        $revisado->corregido = $corregido;
+                        $revisado->evaluacionpregunta = $evaluacionpregunta;
+                        $revisado->punto = $punto;
+                    if($Revisados->save($revisado)){
+                        $presentado=$presentados->query();
+                        $presentado->update()
+                            ->set(['presenta'=>2])
+                            ->where(['evaluacion_id' => $this->request->data['evaluacion'],'user_id'=>$this->Auth->user('id'),'presenta'=>1])
+                            ->execute();
+                    }
+                
+            }
+                
 
         }
         

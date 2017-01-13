@@ -325,7 +325,7 @@ div.message.hidden {
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 225px;
+    left: 220px;
     width: 0;
     height: 76%;
     margin-left: -225px;
@@ -341,7 +341,7 @@ div.message.hidden {
     position: absolute;
     top: 0;
     width: 225px;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -349,7 +349,7 @@ div.message.hidden {
 
 #sidebar-wrapper .sidebar-nav li {
     text-indent: 0;
-    line-height: 45px;
+    line-height: 25px;
     border-bottom: 1px white solid;
 }
 
@@ -357,6 +357,7 @@ div.message.hidden {
     display: block;
     text-decoration: none;
     color: #428bca;
+    margin-left: 10px; 
 }
 
 .sidebar-nav li:first-child a {
