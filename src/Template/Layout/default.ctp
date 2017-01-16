@@ -56,7 +56,7 @@ $cakeDescription = 'Generador de pruebas online';
     </div>
     <footer id="footer">
         <div class="container">
-        <p class="text-muted credit">Tesis de Miguel Agudelo y Victor Quintana</p>
+        <p class="text-muted credit"></p>
       </div>
     </footer>
 </body>

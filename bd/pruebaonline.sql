@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-01-2017 a las 01:31:37
+-- Tiempo de generación: 16-01-2017 a las 04:30:38
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 7.0.9
 
@@ -128,8 +128,8 @@ CREATE TABLE `evaluacions` (
   `id` int(11) NOT NULL,
   `nombre` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
   `ponderada` varchar(2) COLLATE utf8_spanish_ci NOT NULL,
-  `contiempo` datetime DEFAULT NULL,
-  `reloj` date DEFAULT NULL,
+  `contiempo` int(11) DEFAULT NULL,
+  `reloj` int(11) DEFAULT NULL,
   `expiracion` datetime NOT NULL,
   `categoria_id` int(11) NOT NULL,
   `created` datetime NOT NULL,
@@ -141,7 +141,7 @@ CREATE TABLE `evaluacions` (
 --
 
 INSERT INTO `evaluacions` (`id`, `nombre`, `ponderada`, `contiempo`, `reloj`, `expiracion`, `categoria_id`, `created`, `modified`) VALUES
-(7, 'Prueba corta IV', 'No', NULL, NULL, '0000-00-00 00:00:00', 1, '2016-11-17 05:34:51', '2016-12-07 14:47:30'),
+(7, 'Prueba corta IV', 'No', 2, 0, '0000-00-00 00:00:00', 1, '2016-11-17 05:34:51', '2016-12-07 14:47:30'),
 (9, 'Prueba Larga I', 'Si', NULL, NULL, '0000-00-00 00:00:00', 1, '2016-11-21 04:48:20', '2016-12-07 14:48:28'),
 (10, 'Prueba de practica de principios de la informatica', 'No', NULL, NULL, '0000-00-00 00:00:00', 5, '2016-11-24 02:24:03', '2016-11-24 02:24:03');
 
@@ -303,12 +303,12 @@ INSERT INTO `resultados` (`id`, `evaluacionpregunta_id`, `respuesta_id`, `correc
 (13, 14, 1, 1, 33.3333, '2016-12-08 03:36:34', '2016-12-08 03:36:34'),
 (14, 18, 7, 1, 33.3333, '2016-12-08 03:46:39', '2016-12-08 03:46:39'),
 (15, 17, 1, 1, 33.3333, '2016-12-08 03:46:41', '2016-12-08 03:46:41'),
-(58, 26, 14, 1, 20, '2017-01-10 21:02:46', '2017-01-10 21:02:46'),
-(59, 25, 5, 1, 20, '2017-01-10 21:02:46', '2017-01-10 21:02:46'),
-(60, 29, 25, 1, 6.66667, '2017-01-10 21:02:48', '2017-01-10 21:02:48'),
-(61, 29, 27, 1, 6.66667, '2017-01-10 21:02:48', '2017-01-10 21:02:48'),
-(62, 29, 28, 1, 6.66667, '2017-01-10 21:02:48', '2017-01-10 21:02:48'),
-(63, 27, 16, 1, 20, '2017-01-10 21:02:48', '2017-01-10 21:02:48');
+(130, 25, 5, 1, 20, '2017-01-16 03:21:58', '2017-01-16 03:21:58'),
+(131, 26, 14, 1, 20, '2017-01-16 03:22:00', '2017-01-16 03:22:00'),
+(132, 27, 16, 1, 20, '2017-01-16 03:22:02', '2017-01-16 03:22:02'),
+(133, 29, 25, 1, 6.66667, '2017-01-16 03:22:04', '2017-01-16 03:22:04'),
+(134, 29, 27, 1, 6.66667, '2017-01-16 03:22:05', '2017-01-16 03:22:05'),
+(135, 29, 28, 1, 6.66667, '2017-01-16 03:22:05', '2017-01-16 03:22:05');
 
 -- --------------------------------------------------------
 
@@ -322,6 +322,7 @@ CREATE TABLE `revisados` (
   `corregido` int(11) NOT NULL,
   `evaluacionpregunta_id` int(11) NOT NULL,
   `punto` int(11) NOT NULL,
+  `maxima` int(11) NOT NULL,
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -330,9 +331,8 @@ CREATE TABLE `revisados` (
 -- Volcado de datos para la tabla `revisados`
 --
 
-INSERT INTO `revisados` (`id`, `texto`, `corregido`, `evaluacionpregunta_id`, `punto`, `created`, `modified`) VALUES
-(1, 'Modelo vista controlador', 0, 28, 0, '2017-01-05 02:59:44', '2017-01-05 02:59:44'),
-(2, 'kasdjiasdiojpsadasiod ad', 0, 28, 0, '2017-01-10 21:02:47', '2017-01-10 21:02:47');
+INSERT INTO `revisados` (`id`, `texto`, `corregido`, `evaluacionpregunta_id`, `punto`, `maxima`, `created`, `modified`) VALUES
+(15, 'Modelo Vista Controlador', 1, 28, 20, 20, '2017-01-16 03:22:03', '2017-01-16 03:22:03');
 
 -- --------------------------------------------------------
 
@@ -496,12 +496,12 @@ ALTER TABLE `respuestas`
 -- AUTO_INCREMENT de la tabla `resultados`
 --
 ALTER TABLE `resultados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 --
 -- AUTO_INCREMENT de la tabla `revisados`
 --
 ALTER TABLE `revisados`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT de la tabla `users`
 --

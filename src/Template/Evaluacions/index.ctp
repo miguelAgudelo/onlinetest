@@ -31,7 +31,8 @@
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $evaluacion->id],['class' => 'btn btn-sm btn-info']) ?>    
 
                     <?php if($role=='admin'): ?>
-                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $evaluacion->id],['class' => 'btn btn-sm btn-info']) ?> 
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $evaluacion->id],['class' => 'btn btn-sm btn-info']) ?>
+                    <?= $this->Html->link(__('Revisar'), ['action' => 'revisar', $evaluacion->id],['class' => 'btn btn-sm btn-info']) ?>  
                     <?= $this->Html->link(__('Resultados'), ['action' => 'veresultado', $evaluacion->id],['class' => 'btn btn-sm btn-info']) ?>  
                     <?php echo $this->Form->postLink(__('<i class="fa fa-trash">Eliminar</i>'), array('action' => 'delete', $evaluacion->id), array('class' => 'btn btn-sm btn-success', 'escape' => false, 'button title' => 'ELIMINAR'), array('confirm' => __('Are you sure you want to delete # {0}?', $evaluacion->id))); ?>
                      <?php endif; ?>  

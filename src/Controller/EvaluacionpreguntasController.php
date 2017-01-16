@@ -19,7 +19,7 @@ class EvaluacionpreguntasController extends AppController
     public function index()
     {   $presentadoTable = TableRegistry::get('Presentados');
         $presentado=$presentadoTable->find()->where(['user_id'=>$this->Auth->user('id'),'presenta'=>1])->first();
-        $evaluacionpreguntas = $this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$presentado->evaluacion_id,'user_id'=>$this->Auth->user('id')])->contain(['Preguntas'=>['Respuestas']]);
+        $evaluacionpreguntas = $this->Evaluacionpreguntas->find()->where(['evaluacion_id'=>$presentado->evaluacion_id,'user_id'=>$this->Auth->user('id')])->contain(['Preguntas'=>['Respuestas'],'Evaluacions']);
         $this->set([
             'evaluacionpreguntas' => $evaluacionpreguntas,
             '_serialize' => ['evaluacionpreguntas']
@@ -136,6 +136,7 @@ class EvaluacionpreguntasController extends AppController
                         $revisado->corregido = $corregido;
                         $revisado->evaluacionpregunta = $evaluacionpregunta;
                         $revisado->punto = $punto;
+                        $revisado->maxima = $evaluacionpregunta->ponderacion;
                     if($Revisados->save($revisado)){
                         $presentado=$presentados->query();
                         $presentado->update()

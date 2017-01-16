@@ -49,6 +49,10 @@ class EvaluacionpreguntasTable extends Table
         $this->hasMany('Resultados', [
             'foreignKey' => 'evaluacionpregunta_id'
         ]);
+
+        $this->hasMany('Revisados', [
+            'foreignKey' => 'evaluacionpregunta_id'
+        ]);
     }
 
     /**

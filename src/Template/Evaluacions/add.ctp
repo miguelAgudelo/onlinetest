@@ -16,8 +16,8 @@
         </div>
         <br>
         <div class="form-group">
-         <label for="contiempo">¿Tiempo para realizar la prueba?</label> 
-        <?= $this->Form->input('contiempo',['type'=>'time','label'=>'','class'=>"form-control"]); ?>
+         <label for="contiempo">¿Tiempo para realizar la prueba?</label>  
+        <?= $this->Form->input('contiempo',['type'=>'time','label'=>'','max'=>'00:45:00','min'=>"05:00",'class'=>"form-control"]); ?>
         </div>
         <br>
         <div class="form-group">

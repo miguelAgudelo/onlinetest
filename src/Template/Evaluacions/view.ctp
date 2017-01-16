@@ -12,7 +12,7 @@
                 dataType:'json', beforeSend: function (xhr) {
                         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                         function explode(){
-                          var resultado="http://localhost/pruebaonline3/evaluacionpreguntas/resolver/"+$('#evaluacion-id').val();
+                          var resultado="http://localhost/pruebaonline/evaluacionpreguntas/resolver/"+$('#evaluacion-id').val();
                           window.location.href = resultado;
                         }
                          

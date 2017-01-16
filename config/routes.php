@@ -45,6 +45,9 @@ Router::scope('/', function ($routes) {
     $routes->extensions(['json']);
     $routes->resources('Evaluacionpreguntas',[
     'only' => ['index', 'view']]);
+    $routes->extensions(['json']);
+    $routes->resources('Revisados',[
+    'only' => ['index', 'view']]);
 });
 Router::scope('/', function (RouteBuilder $routes) {
     /**

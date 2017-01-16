@@ -1,6 +1,6 @@
 <?php
 namespace App\Controller;
-
+use Cake\ORM\TableRegistry;
 use App\Controller\AppController;
 
 /**
@@ -36,12 +36,14 @@ class RevisadosController extends AppController
      */
     public function view($id = null)
     {
-        $revisado = $this->Revisados->get($id, [
-            'contain' => ['Resultados']
+        $Evaluacionpreguntas = TableRegistry::get('Evaluacionpreguntas');
+        $evaluacionpreguntas=$Evaluacionpreguntas->find()->where(['evaluacion_id'=>$id])->contain(['Revisados'=>['Evaluacionpreguntas'=>['Users','Preguntas']]]);
+        
+        
+       $this->set([
+            'evaluacionpreguntas' => $evaluacionpreguntas,
+            '_serialize' => ['evaluacionpreguntas']
         ]);
-
-        $this->set('revisado', $revisado);
-        $this->set('_serialize', ['revisado']);
     }
 
     /**

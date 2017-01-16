@@ -31,6 +31,34 @@ class EvaluacionsController extends AppController
         $this->set('_serialize', ['evaluacions']);
     }
 
+    public function revisar($id = null)
+    {   
+        $Evaluacionpreguntas = TableRegistry::get('Evaluacionpreguntas');
+        $evaluacionpreguntas=$Evaluacionpreguntas->find()->where(['evaluacion_id'=>$id])->contain(['Revisados'=>['Evaluacionpreguntas'=>['Users','Preguntas']]]);
+         if ($this->request->is('post')) {
+            $revisados = TableRegistry::get('Revisados');
+            $max=$revisados->findById($this->request->data['id'])->first();
+            if($max->maxima>0){
+                if($max->maxima<=$this->request->data['punto']){
+                    $revisado=$revisados->query();
+                    $revisado->update()
+                        ->set(['corregido'=>1,'punto' =>$max->maxima])
+                        ->where(['id' => $this->request->data['id']])
+                        ->execute();
+                }else{
+                    $revisado=$revisados->query();
+                    $revisado->update()
+                        ->set(['corregido'=>1,'punto' =>$this->request->data['punto']])
+                        ->where(['id' => $this->request->data['id']])
+                        ->execute();
+                }
+
+            }
+        }
+        $this->set(compact('evaluacionpreguntas','id'));
+        $this->set('_serialize', ['evaluacions']);
+    }
+
     /**
      * View method
      *
@@ -119,7 +147,7 @@ class EvaluacionsController extends AppController
        
         $evaluacion = $this->Evaluacions->get($id);
         $Users = TableRegistry::get('Users');
-        $users=$Users->find()->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
+        $users=$Users->find()->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas','Revisados']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
             return $q->where(['Evaluacions.id'=>$id]);
         })->toArray();
         $notas=array_unique($users);
@@ -148,7 +176,7 @@ class EvaluacionsController extends AppController
        
         $evaluacion = $this->Evaluacions->get($id);
         $Users = TableRegistry::get('Users');
-        $users=$Users->find()->where(['Users.id'=>$this->Auth->user('id')])->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
+        $users=$Users->find()->where(['Users.id'=>$this->Auth->user('id')])->contain(['Evaluacionpreguntas'=>function($a) use($id){return $a->where(['evaluacion_id'=>$id])->contain(['Resultados','Preguntas','Revisados']);}])->innerJoinWith('Evaluacionpreguntas.Evaluacions',function($q) use($id){
             return $q->where(['Evaluacions.id'=>$id]);
         })->toArray();
         $notas=array_unique($users);

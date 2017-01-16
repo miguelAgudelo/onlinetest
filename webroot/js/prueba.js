@@ -5,19 +5,26 @@ prueba.config(function (localStorageServiceProvider) {
     .setStorageType('sessionStorage')
     .setNotify(true, true)
 });
-var pruebacontroller=function($scope,$http,localStorageService){
-		var url='http://localhost/pruebaonline3/evaluacionpreguntas.json';
-			
+var pruebacontroller=function($scope,$http,localStorageService,$timeout){
+		var url='http://localhost/pruebaonline/evaluacionpreguntas.json';
+		$scope.seve=false;
+		$scope.term=false;
+		$scope.s1=this.sg;
+		$scope.m1=this.mm;
+		window.setTimeout(tiempo, 1000);
 			if(localStorageService.get("Angular-prueba")){
 				$scope.evaluacionpreguntas=localStorageService.get("Angular-prueba");
 				$scope.numero=0;
 				console.log(localStorageService.get("Angular-prueba"));
-
+				$scope.mm = localStorageService.get("Angular-reloj1");
+				$scope.sg = localStorageService.get("Angular-reloj2"); 
 			}else{
 				$http.get(url).success(function(evaluacionpreguntas){
 				
 				var mievaluacion=evaluacionpreguntas;
 				for (var i = 0; i < mievaluacion.evaluacionpreguntas.length; i++) {
+					var reloj1=mievaluacion.evaluacionpreguntas[i].evaluacion.contiempo;
+					var reloj2=mievaluacion.evaluacionpreguntas[i].evaluacion.reloj;
 					mievaluacion.evaluacionpreguntas[i].pregunta.resuelta=0;
 					console.log(mievaluacion.evaluacionpreguntas[i].pregunta);
 					for (var j =0; j <mievaluacion.evaluacionpreguntas[i].pregunta.respuestas.length; j++) {
@@ -27,12 +34,33 @@ var pruebacontroller=function($scope,$http,localStorageService){
 					}
 				}
 				localStorageService.set("Angular-prueba",mievaluacion);
+				localStorageService.set("Angular-reloj1",reloj1);
+				localStorageService.set("Angular-reloj2",reloj2);
 				$scope.evaluacionpreguntas=localStorageService.get("Angular-prueba");
 				
-				$scope.numero=0; 
+				$scope.numero=0;
+				$scope.mm = localStorageService.get("Angular-reloj1");
+				$scope.sg = localStorageService.get("Angular-reloj2"); 
 				});
 			}
-
+			
+			var si=0;
+			var tiempo = function() {
+					        this.s1--;
+					        console.log("pasa");
+					        if(this.s1==0){
+					        	this.m1--;
+					        	this.s1=59;
+					        }
+					        if(this.m1==0){
+					        	$scope.term=true;
+					        	si=1;
+							}
+							if(si==0){
+								window.setTimeout(tiempo, 1000);
+							}
+					      
+					    }
         	$scope.load_pregunta=function(c){
 				$scope.numero=c;
 			};
@@ -119,10 +147,21 @@ var pruebacontroller=function($scope,$http,localStorageService){
 				$scope.evaluacionpreguntas=localStorageService.get("Angular-prueba");
 			};
 
-			
+			$scope.terminar=function(){
+				$scope.term=true;
+				
+			};
+
+			$scope.volver=function(){
+				$scope.term=false;
+			};
+
 
 			$scope.culminar=function(){
 				mievaluacion=localStorageService.get("Angular-prueba");
+				$scope.seve=true;
+				$scope.term=false;
+				
 				for (var i = 0; i < mievaluacion.evaluacionpreguntas.length; i++) {
 					evaluacion=mievaluacion.evaluacionpreguntas[i].evaluacion_id;
 					
@@ -137,13 +176,12 @@ var pruebacontroller=function($scope,$http,localStorageService){
 								console.log(data);
 								$http({
 								      method: 'post',
-								      url: "http://localhost/pruebaonline3/evaluacionpreguntas/responder",
+								      url: "http://localhost/pruebaonline/evaluacionpreguntas/responder",
 								      data: {"evaluacion":evaluacion,"pregunta":pregunta,"respuesta":respuesta},
 								      dataType:'json'
 								    }).
 								    success(function(response) {
-								        console.log("success")
-								        console.log(response)
+								        console.log("success");
 								    }).
 								    error(function(response) {
 								        console.log("error")
@@ -163,13 +201,13 @@ var pruebacontroller=function($scope,$http,localStorageService){
 							console.log(data);
 							$http({
 									      method: 'post',
-									      url: "http://localhost/pruebaonline3/evaluacionpreguntas/responder",
+									      url: "http://localhost/pruebaonline/evaluacionpreguntas/responder",
 									      data: {"evaluacion":evaluacion,"pregunta":pregunta,"respuesta":respuestas},
 									      dataType:'json'
 									    }).
 									    success(function(response) {
 									        console.log("success")
-									        console.log(response)
+									        
 									    }).
 									    error(function(response) {
 									        console.log("error")
@@ -186,22 +224,87 @@ var pruebacontroller=function($scope,$http,localStorageService){
 							console.log(data);
 							$http({
 									      method: 'post',
-									      url: "http://localhost/pruebaonline3/evaluacionpreguntas/responder",
+									      url: "http://localhost/pruebaonline/evaluacionpreguntas/responder",
 									      data: {"evaluacion":evaluacion,"pregunta":pregunta,"respuesta":respuesta},
 									      dataType:'json'
 									    }).
 									    success(function(response) {
 									        console.log("success")
-									        console.log(response)
 									    }).
 									    error(function(response) {
 									        console.log("error")
 									    });
 						}
 					}
-				
+				localStorageService.clearAll();
+				localStorageService.cookie.clearAll();
+				location.replace("http://localhost/pruebaonline/evaluacions");
 				
 			};
+			
+			
+
+			
+			
 	};
 		
 prueba.controller("pruebacontroller", pruebacontroller);
+
+var pruebacontroller2 = function($scope,$http,$timeout){
+		var url='http://localhost/pruebaonline/revisados/';
+		txt =String(window.location.href);
+		txt = txt.replace(/\D/g,'');
+		var id=txt;
+		
+		angular.element(document).ready(function () {
+        	$http.get(url+id+'.json').success(function(evaluacionpreguntas){
+				$scope.evaluacionpreguntas=evaluacionpreguntas;
+				$scope.seve=1;
+				console.log(evaluacionpreguntas);
+			});
+    	});
+		
+		 $scope.puntuar=function(c){
+				
+				$http({
+						method: 'post',
+						url: "http://localhost/pruebaonline/evaluacions/revisar/"+id,
+						data: {"id":c,"punto":this.punto},
+						dataType:'json'
+						}).
+						success(function(response) {
+						 	console.log("success")
+						 	var success=true;
+						 	$scope.stado=1;
+							$timeout(countUp, 2000);
+						}).
+						error(function(response) {
+							console.log("error")
+							var success=false;
+							$scope.stado=2;
+							$timeout(countDown, 2000);
+						});
+						if(success=true){
+							var mievaluacion=this.evaluacionpreguntas;
+							for (var i = 0; i < mievaluacion.evaluacionpreguntas.length; i++) {
+								for (var j =0; j <mievaluacion.evaluacionpreguntas[i].revisados.length; j++) {
+									if(mievaluacion.evaluacionpreguntas[i].revisados[j].id==c){
+										mievaluacion.evaluacionpreguntas[i].revisados[j].corregido=1;
+										mievaluacion.evaluacionpreguntas[i].revisados[j].punto=this.punto;
+										
+									}
+								}
+							}	
+							this.evaluacionpreguntas=mievaluacion;
+						}
+
+						var countUp = function() {
+					        $scope.stado=0;
+					    }
+						var countDown= function() {
+					        $scope.stado=0;
+					    }
+				
+			};
+		};
+prueba.controller("pruebacontroller2", pruebacontroller2);
